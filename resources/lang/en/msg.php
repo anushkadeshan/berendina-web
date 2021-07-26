@@ -1,0 +1,51 @@
+<?php
+
+return [
+    'search' => 'Search',
+    'call us' => 'Call us for more details!',
+    'mail us' => 'Mail Us Today',
+    'BDS' => 'Berendina Development Services Guarantee Limited (BDS)',
+    'BMIC' => 'Berendina Micro Investments Company Limited (BDS)',
+    'micro credit' => 'micro credit',
+    'social performance' => 'social performance',
+    'savings' => 'savings',
+    'entrepreneurship' => 'entrepreneurship',
+    'envirnment' => 'envirnment',
+    'covid 19' => 'covid 19',
+    'livelihood support' => 'livelihood support',
+    'eip assistance' => 'eip assistance',
+    'housing water and sanitation' => 'housing water and sanitation',
+    'jobs' => 'jobs',
+    'trainings' => 'trainings',
+    'scholarships' => 'scholarships',
+    'Where we work' => 'Where we work',
+    'home' =>'Home',
+    'Latest' => 'Latest',
+    'News' => 'News',
+    'Berendina in the' => 'Berendina in the',
+    'Media' => 'Media',
+    'Berendina' => 'Berendina',
+    'videos' => 'Videos',
+    'photos' => 'photos',
+    'Read More' => 'Read More',
+    'Annual' => 'Annual',
+    'Reports' => 'Reports',
+    'Board of Governance' => 'Board of Governance',
+    'Berendina Stichting' => 'Berendina Stichting',
+    'Our Awards' => 'Our Awards',
+    'Our Partners' => 'Our Partners',
+    'Micro Credit' => 'Micro Credit',
+    'Financial Services' => 'Financial Services',
+    'Our Products' => 'Our Products',
+    'Cluster Leader Program' => 'Cluster Leader Program',
+    'Contact Us' => 'Contact Us',
+    'Home' => 'Home',
+    'Our Vision' => 'Our Vision',
+    'Careers' => 'Careers',
+    'Recent Jobs' => 'Recent Jobs',
+
+
+
+];
+
+?>
