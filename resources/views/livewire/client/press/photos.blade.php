@@ -81,7 +81,7 @@
                     </div>
                 </div>
                 <div class="text-center">
-                    <a href="#" class="btn btn-border btn-theme-colored btn-flat btn-lg">{{__('Read More')}}</a>
+                    <a href="{{route('home.image_gallery')}}" class="btn btn-border btn-theme-colored btn-flat btn-lg">{{__('Read More')}}</a>
                 </div>
             </div>
         </div>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\client;
 
 use App\Http\Controllers\Controller;
+use App\Models\News;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -15,8 +16,9 @@ class HomeController extends Controller
         return view('press');
     }
 
-    public function news_single(){
-        return view('news-single');
+    public function news_single($id,$title){
+        $news = News::find($id);
+        return view('news-single',compact('id','news'));
     }
 
     public function about_us(){
@@ -33,5 +35,9 @@ class HomeController extends Controller
 
     public function careers(){
         return view('careers');
+    }
+
+    public function all_news(Request $request){
+        return view('all-news')->with(['query'=>$request->input("query"),'cat'=>$request->input("cat")]);
     }
 }

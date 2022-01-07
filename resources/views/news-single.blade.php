@@ -12,7 +12,18 @@
                 <div class="section-content">
                     <div class="row">
                         <div class="col-md-12">
-                            <h5 class="title text-white">News Title</h5>
+                            <h5 class="title text-white">
+                                @switch(session('locale'))
+                                    @case('ta')
+                                        {{$news->ta_title}}
+                                    @break
+                                    @case('si')
+                                        {{$news->si_title}}
+                                    @break
+                                    @default
+                                        {{$news->title}}
+                                @endswitch
+                            </h5>
                         </div>
                     </div>
                 </div>
@@ -20,7 +31,7 @@
         </section>
     </div>
     <div class="container" style="margin-top: 30px;">
-        <livewire:client.press.single-news />
+        <livewire:client.press.single-news :news="$news" />
         <!-- Footer -->
     </div>
     <br>

@@ -20,27 +20,25 @@
                     <div class="widget dark">
                         <h5 class="widget-title line-bottom">Latest News</h5>
                         <div class="latest-posts">
-                            <article class="post media-post clearfix pb-0 mb-10">
-                                <a href="#" class="post-thumb"><img alt="" src="http://placehold.it/80x55"></a>
-                                <div class="post-right">
-                                    <h5 class="post-title mt-0 mb-5"><a href="#">Sustainable Construction</a></h5>
-                                    <p class="post-date mb-0 font-12">Mar 08, 2015</p>
-                                </div>
-                            </article>
-                            <article class="post media-post clearfix pb-0 mb-10">
-                                <a href="#" class="post-thumb"><img alt="" src="http://placehold.it/80x55"></a>
-                                <div class="post-right">
-                                    <h5 class="post-title mt-0 mb-5"><a href="#">Industrial Coatings</a></h5>
-                                    <p class="post-date mb-0 font-12">Mar 08, 2015</p>
-                                </div>
-                            </article>
-                            <article class="post media-post clearfix pb-0 mb-10">
-                                <a href="#" class="post-thumb"><img alt="" src="http://placehold.it/80x55"></a>
-                                <div class="post-right">
-                                    <h5 class="post-title mt-0 mb-5"><a href="#">Storefront Installations</a></h5>
-                                    <p class="post-date mb-0 font-12">Mar 08, 2015</p>
-                                </div>
-                            </article>
+                            @foreach($latest_news as $n)
+                                <article class="post media-post clearfix pb-0 mb-10">
+                                    <a href="#" class="post-thumb"><img alt="" src="{{URL::asset('storage/photos/news/thumb_small/'.$n->image)}}"></a>
+                                    <div class="post-right">
+                                        <h5 class="post-title mt-0 mb-5"><a href="{{route('home.news_single', [$n->id,$n->title])}}">
+                                            @switch(session('locale'))
+                                            @case('ta')
+                                                {{$n['ta_title']}}
+                                            @break
+                                            @case('si')
+                                                {{$n['si_title']}}
+                                            @break
+                                            @default
+                                                {{$n['title']}}
+                                        @endswitch</a></h5>
+                                        <p class="post-date mb-0 font-12">Mar 08, 2015</p>
+                                    </div>
+                                </article>
+                            @endforeach
                         </div>
                     </div>
                 </div>
@@ -71,7 +69,7 @@
                             <button type="submit" class="btn btn-default btn-flat btn-xs btn-transparent text-gray pt-5 pb-5" data-loading-text="Please wait...">Send Message</button>
                           </div>
                         </form>
-            
+
                         <!-- Quick Contact Form Validation-->
                         <script type="text/javascript">
                           $("#quick_contact_form2").validate({
@@ -99,7 +97,7 @@
                       </div>
                 </div>
             </div>
-            
+
         </div>
         <div class="footer-bottom bg-black-333">
             <div class="container pt-20 pb-20">

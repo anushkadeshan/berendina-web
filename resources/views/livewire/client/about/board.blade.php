@@ -6,7 +6,7 @@
                 <div class="item">
                     <div class="row-fluid">
                         <div class="col-md-3">
-                            <img src="http://placehold.it/350x400" alt="">
+                            <img src="{{asset('images/aa.jpg')}}" alt="">
                         </div>
                         <div class="col-md-9">
                             <h4 class="mt-0 mb-0 text-black-666">Anura Atapattu</h4>
@@ -34,7 +34,7 @@
                 <div class="item">
                     <div class="row-fluid">
                         <div class="col-md-3">
-                            <img src="http://placehold.it/350x400" alt="">
+                            <img src="{{asset('images/jg.jpg')}}" alt="">
                         </div>
                         <div class="col-md-9">
                             <h4 class="mt-0 mb-0 text-black-666">Jagath Godakanda</h4>
@@ -121,6 +121,6 @@
             ipsa quaerat suscipit.
         </p>
     </div>
-    
-    
+
+
 </div>

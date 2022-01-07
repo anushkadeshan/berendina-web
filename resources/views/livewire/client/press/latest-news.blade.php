@@ -1,4 +1,5 @@
 <div>
+
     <section>
         <div class="container">
             <div class="section-title">
@@ -19,11 +20,12 @@
             </div>
             <div class="row multi-row-clearfix">
                 <div class="blog-posts">
+                    @foreach($news as $n)
                     <div class="col-md-4">
                         <article class="post clearfix mb-30 bg-lighter">
                             <div class="entry-header">
                                 <div class="post-thumb thumb">
-                                    <img src="http://placehold.it/330x225" alt="" class="img-responsive img-fullwidth">
+                                    <img src="{{URL::asset('storage/photos/news/thumb_medium/'.$n->image)}}" alt="" class="img-responsive img-fullwidth">
                                 </div>
                             </div>
                             <div class="entry-content p-20 pr-10">
@@ -31,107 +33,86 @@
                                     <div
                                         class="entry-date media-left text-center flip bg-theme-colored pt-5 pr-15 pb-5 pl-15">
                                         <ul>
-                                            <li class="font-16 text-white font-weight-600">28</li>
-                                            <li class="font-12 text-white text-uppercase">Feb</li>
+                                            <li class="font-16 text-white font-weight-600">
+                                                @php
+                                                $timestamp = strtotime($n->created_at);
+                                                    $day = date('d', $timestamp);
+                                                @endphp
+                                                {{$day}}
+                                            </li>
+                                            <li class="font-12 text-white text-uppercase">
+                                                @php
+                                                $timestamp = strtotime($n->created_at);
+                                                    $m = date('m', $timestamp);
+                                                    $monthName = date('M', mktime(0, 0, 0, $m, 10));
+                                                @endphp
+                                                {{$monthName}}
+                                            </li>
                                         </ul>
                                     </div>
                                     <div class="media-body pl-15">
                                         <div class="event-content pull-left flip">
-                                            <h4 class="entry-title text-white text-uppercase m-0 mt-5"><a href="#">Post
-                                                    title here</a></h4>
-                                            <span class="mb-10 text-gray-darkgray mr-10 font-13"><i
-                                                    class="fa fa-commenting-o mr-5 text-theme-colored"></i> 214
-                                                Comments</span>
-                                            <span class="mb-10 text-gray-darkgray mr-10 font-13"><i
-                                                    class="fa fa-heart-o mr-5 text-theme-colored"></i> 895 Likes</span>
+                                            <h4 class="entry-title text-white m-0 mt-5"><a href="#">
+
+                                                @switch(session('locale'))
+                                                    @case('ta')
+                                                        {{$n->ta_title}}
+                                                    @break
+                                                    @case('si')
+                                                        {{$n->si_title}}
+                                                    @break
+                                                    @default
+                                                        {{$n->title}}
+                                                @endswitch
+
+                                            </a></h4>
                                         </div>
                                     </div>
                                 </div>
-                                <p class="mt-10">Lorem ipsum dolor sit amet, consectetur adipisi cing elit. Molestias
-                                    eius illum libero dolor nobis deleniti, sint assumenda. Pariatur iste veritatis
-                                    excepturi, ipsa optio nobis.</p>
-                                <a href="#" class="btn-read-more">Read more</a>
+                                <p class="mt-10 text-justify">
+                                    @switch(session('locale'))
+                                        @case('ta')
+                                            @php
+                                                $text = strip_tags($n->ta_description);
+                                                $text2 = str_replace('&nbsp;', ' ', $text);
+                                            @endphp
+                                            {{ Str::limit($text2, 250) }}
+                                        @break
+                                        @case('si')
+                                            @php
+                                                $text = strip_tags($n->si_description);
+                                                $text2 = str_replace('&nbsp;', ' ', $text);
+                                            @endphp
+                                            {{ Str::limit($text2, 250) }}
+                                        @break
+                                        @default
+                                            @php
+                                                $text = strip_tags($n->description);
+                                                $text2 = str_replace('&nbsp;', ' ', $text);
+                                            @endphp
+                                            {{ Str::limit($text2, 250) }}
+                                    @endswitch
+
+                                </p>
+                                <a href="{{route('home.news_single', [$n->id,$n->title])}}" class="btn-read-more">Read more</a>
                                 <div class="clearfix"></div>
                             </div>
                         </article>
                     </div>
-                    <div class="col-md-4">
-                        <article class="post clearfix mb-30 bg-lighter">
-                            <div class="entry-header">
-                                <div class="post-thumb thumb">
-                                    <img src="http://placehold.it/330x225" alt="" class="img-responsive img-fullwidth">
-                                </div>
-                            </div>
-                            <div class="entry-content p-20 pr-10">
-                                <div class="entry-meta media mt-0 no-bg no-border">
-                                    <div
-                                        class="entry-date media-left text-center flip bg-theme-colored pt-5 pr-15 pb-5 pl-15">
-                                        <ul>
-                                            <li class="font-16 text-white font-weight-600">28</li>
-                                            <li class="font-12 text-white text-uppercase">Feb</li>
-                                        </ul>
-                                    </div>
-                                    <div class="media-body pl-15">
-                                        <div class="event-content pull-left flip">
-                                            <h4 class="entry-title text-white text-uppercase m-0 mt-5"><a href="#">Post
-                                                    title here</a></h4>
-                                            <span class="mb-10 text-gray-darkgray mr-10 font-13"><i
-                                                    class="fa fa-commenting-o mr-5 text-theme-colored"></i> 214
-                                                Comments</span>
-                                            <span class="mb-10 text-gray-darkgray mr-10 font-13"><i
-                                                    class="fa fa-heart-o mr-5 text-theme-colored"></i> 895 Likes</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="mt-10">Lorem ipsum dolor sit amet, consectetur adipisi cing elit. Molestias
-                                    eius illum libero dolor nobis deleniti, sint assumenda. Pariatur iste veritatis
-                                    excepturi, ipsa optio nobis.</p>
-                                <a href="{{route('home.news_single')}}" class="btn-read-more">Read more</a>
-                                <div class="clearfix"></div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-md-4">
-                        <article class="post clearfix mb-30 bg-lighter">
-                            <div class="entry-header">
-                                <div class="post-thumb thumb">
-                                    <img src="http://placehold.it/330x225" alt="" class="img-responsive img-fullwidth">
-                                </div>
-                            </div>
-                            <div class="entry-content p-20 pr-10">
-                                <div class="entry-meta media mt-0 no-bg no-border">
-                                    <div
-                                        class="entry-date media-left text-center flip bg-theme-colored pt-5 pr-15 pb-5 pl-15">
-                                        <ul>
-                                            <li class="font-16 text-white font-weight-600">28</li>
-                                            <li class="font-12 text-white text-uppercase">Feb</li>
-                                        </ul>
-                                    </div>
-                                    <div class="media-body pl-15">
-                                        <div class="event-content pull-left flip">
-                                            <h4 class="entry-title text-white text-uppercase m-0 mt-5"><a href="#">Post
-                                                    title here</a></h4>
-                                            <span class="mb-10 text-gray-darkgray mr-10 font-13"><i
-                                                    class="fa fa-commenting-o mr-5 text-theme-colored"></i> 214
-                                                Comments</span>
-                                            <span class="mb-10 text-gray-darkgray mr-10 font-13"><i
-                                                    class="fa fa-heart-o mr-5 text-theme-colored"></i> 895 Likes</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="mt-10">Lorem ipsum dolor sit amet, consectetur adipisi cing elit. Molestias
-                                    eius illum libero dolor nobis deleniti, sint assumenda. Pariatur iste veritatis
-                                    excepturi, ipsa optio nobis.</p>
-                                <a href="#" class="btn-read-more">Read more</a>
-                                <div class="clearfix"></div>
-                            </div>
-                        </article>
-                    </div>
-                    
+                    @endforeach
+
                 </div>
-                <div class="text-center">
-                    <a href="#" class="btn btn-border btn-theme-colored btn-flat btn-lg">{{__('Read More')}}</a>
-                </div>
+
+            </div>
+            <div class="text-center">
+                <a class="btn btn-border btn-theme-colored btn-flat btn-lg" wire:click.prevent="readmore">
+                    <span wire:loading.remove wire:target="readmore">
+                        {{__('Read More')}}
+                    </span>
+                    <span wire:loading wire:target="readmore">
+                        {{__('Loading')}}
+                    </span>
+                </a>
             </div>
         </div>
     </section>
