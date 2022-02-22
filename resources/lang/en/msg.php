@@ -19,7 +19,7 @@ return [
     'trainings' => 'trainings',
     'scholarships' => 'scholarships',
     'Where we work' => 'Where we work',
-    'home' =>'Home',
+    'home' => 'Home',
     'Latest' => 'Latest',
     'News' => 'News',
     'Berendina in the' => 'Berendina in the',
@@ -107,7 +107,7 @@ return [
     'Building of Civil Society Organizations' => 'Building of Civil Society Organizations',
 
     //BDS History
-    '16 YEARS OF FIGHTING FOR AN EMPOWERED AND EQUITABLE SOCIETY AS BDS.' => '16 YEARS OF FIGHTING FOR AN EMPOWERED AND EQUITABLE SOCIETY AS BDS.',
+    '35 YEARS OF FIGHTING FOR AN EMPOWERED AND EQUITABLE SOCIETY AS BDS.' => '35 YEARS OF FIGHTING FOR AN EMPOWERED AND EQUITABLE SOCIETY AS BDS.',
     '1982' => 'Mrs.Berendina Borst from the Netherlands first visited Sri Lanka Inception of Berendina in Garagoda, Yatiyanthota.',
     '1987' => 'A Trust named Berendina Stichting was created in 1987 by Mrs. Borst to continue her work, which she had begun in Sri Lanka before she passed away that same year',
     '1992' => 'Garagoda Development Project was  started in Sri Lanka by three consultants appointed by Berendina Stitchting',
@@ -116,32 +116,29 @@ return [
     Ltd (BDS) was established with the
     registation under the Company
      Act No. 17 of 1982',
-     '2007-1' => 'Berendina Development Services (Gte) Ltd., was
+    '2007-1' => 'Berendina Development Services (Gte) Ltd., was
      re-registered under the company Act No. 07 of 2007.',
-     '2007-2' => 'Berendina Microfinance Institute (Gte) Ltd (BMI)
+    '2007-2' => 'Berendina Microfinance Institute (Gte) Ltd (BMI)
      was established',
-     '2014' => 'Berendina Micro Investments
+    '2014' => 'Berendina Micro Investments
      Company Ltd (BMIC) was
      established as a subsidiary
      company of Berendina
      Development Services (Gte) Ltd',
-     '2015' => 'Youth support programme separated as
+    '2015' => 'Youth support programme separated as
      Berendina Employment Centre (Gte) Ltd
      from Berendina Development Services (Gte) Ltd',
-     'Registered as a Non-Government
-     Organisation under Voluntary Social
-     Services Organisation Act No. 31 of 1980
-     as amended by Act No. 08 of 1998' => 'Registered as a Non-Government
+    '2016' => 'Registered as a Non-Government
      Organisation under Voluntary Social
      Services Organisation Act No. 31 of 1980
      as amended by Act No. 08 of 1998',
-     '2017' => 'Berendina Development Services (Gte) Ltd (BDS)
+    '2017' => 'Berendina Development Services (Gte) Ltd (BDS)
      shifted to a project approach incorporating logframes.',
-     '2019' => 'Successfully completed a three-year strategy',
-     '2021' => 'Began undertaking COVID-19 humanitarian and relief work',
-        //MEAL
-     'Monitoring, Evaluation, Accountability and Learning' => 'Monitoring, Evaluation, Accountability and Learning',
-     'meal1' => 'Monitoring and evaluation (M&E) will function as the backbone of BDS programs. It will serve to ensure
+    '2019' => 'Successfully completed a three-year strategy',
+    '2021' => 'Began undertaking COVID-19 humanitarian and relief work',
+    //MEAL
+    'Monitoring, Evaluation, Accountability and Learning' => 'Monitoring, Evaluation, Accountability and Learning',
+    'meal1' => 'Monitoring and evaluation (M&E) will function as the backbone of BDS programs. It will serve to ensure
                 high-quality implementation, provide timely information for informed management decisions, and measure
                 contributions to outcomes and impacts. Going further, the M&E moniker has been augmented to include
                 accountability and learning under the new strategy. Hence the terminology will be changed as Monitoring,
@@ -211,9 +208,9 @@ return [
                 the family together (CARE study 2015), Sexual harassment at workplace is covered under law but incidents are
                 under reported.',
     'gender7' => 'In response to the above gender discriminatory status, BDS will give due attention to addressing gender gaps in
-                the strategic areas under the three components.' ,
+                the strategic areas under the three components.',
 
-                //Environment Sustainability<
+    //Environment Sustainability<
     'Environment Sustainability' => 'Environment Sustainability',
     'env1' => 'Deforestation has proved to be the most detrimental for Sri Lanka because of the large number of forests that
                 had been eliminated for more plantations and agricultural land. Sri Lanka is a big and major producer of tea,
@@ -248,7 +245,7 @@ return [
             component and steps have to be taken to minimize environmental issues and sustain the bio diversity. Disaster
             management has to be a key area in the five years strategy of BDS.',
 
-            //Disability
+    //Disability
     'Disability Inclusion' => 'Disability Inclusion',
     'disability1' => 'According to the population and housing information of 2012 there are 1,617,924 impaired persons in the total
         population who have either a mental or a physical impairment out of which 695,263 are males and 922,661 are
@@ -273,7 +270,48 @@ return [
     //Ensuring youth engagement in program implementation
 
     'Ensuring youth engagement in program implementation' => 'Ensuring youth engagement in program implementation',
-    
+    'See More and Apply' => 'See More and Apply',
+
+    'About Us' => 'About Us',
+    'about us 1' => 'The story of Berendina begins at a small village named Garagoda in Yatiyantota, situated
+    75 kilometres away from the Capital City of Colombo. Mrs. Berendina Borst a well-known philanthropist from
+    the Netherlands, visited Sri Lanka for the first time in 1982, where she saw most of the people were living
+    below the poverty line. Her friend in Sri Lanka Mrs. Eva Mudalige, who was a teacher by profession and a
+    committed social worker was also living in Garagoda. Both of them became partners in social work and wanted
+    the poor community of Garagoda to come out of poverty.',
+
+    'about us 2' => 'Mrs. Borst created a Trust named ‘Berendina Stichting’ in 1987 to continue her social service activities. She appointed her banker, Mr. Bas Timmermans as the Chairman and Prof. A. H. M. Santen and Mr. John Smit as Directors. That same year, Berendina Stichting started working in Yatiyantota, continuing to help the poor families in Garagoda. This village received support to construct drinking water facilities and toilets and promoting health through nutrition and healthcare programmes, particularly for children, the elderly, pregnant women and breastfeeding mothers. Berendina also built and repaired their homes.',
+
+    'about us 3' => 'In 1992, Berendina Stichting appointed Mr. Dulan de Silva as the
+lead consultant, along with Mr. Anura Athapattu and Mr. Jagath Godakanda as other consultants, after
+which the Garagoda Development Project was started and the first office of Berendina was
+established. In 1997, Berendina Stichting signed an MOU with the Ministry of Policy Planning of the
+Government of Sri Lanka and became a recognized International NGO working in Sri Lanka.',
+
+'about us 4' => 'In 2005, the formation of Sri Lankan organisations commenced. Berendina
+Development Services (Guarantee) Limited, well known as BDS, was established in 2005. In 2007, Berendina
+Microfinance Institute (Guarantee) Limited. (BMI), was formed. Berendina Micro Investments Company
+Limited (BMIC) was formed in 2014, to support the expansion of the microfinance work of BMI and all
+microfinance activities were completely transferred to BMIC in 2017. In 2015, Berendina Employment
+Center (Guarantee) Limited (BEC), was established and in 2019 it was amalgamated with Berendina
+Development Services (Guarantee) Limited under the new strategic plan. In 2019, Berendina Micro
+Investments Company Ltd (BMIC) became the first Micro Finance institution to receive the license from
+the Central Bank of Sri Lanka.',
+
+'Closing Date' => 'Closing Date',
+'Click to Apply' => 'Click to Apply',
+'Fill required fields and apply job' => 'Fill required fields and apply job',
+'Apply' => 'Apply',
+'Full Name' => 'Full Name',
+'Sex' => 'Sex',
+'Email' => 'Email',
+'Message' => 'Message',
+'C/V Upload' => 'C/V Upload',
+'Maximum upload file size: 12 MB' => 'Maximum upload file size: 12 MB',
+'Job Application successfully recived.' => 'Job Application successfully recived.',
+
+
+
 
 
 
@@ -296,5 +334,3 @@ return [
 
 
 ];
-
-?>

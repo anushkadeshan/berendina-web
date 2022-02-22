@@ -43,6 +43,7 @@
 						</ul>
 					</li>
                     <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav {{ Route::currentRouteName() == 'annual-reports.index' ? 'active' : ''}}" href="{{ route('annual-reports.index') }}"><i class="icofont icofont-book-alt"></i></i><span> Annual Reports</span></a></li>
+                    <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav {{ Route::currentRouteName() == 'careers' ? 'active' : ''}}" href="{{ route('careers') }}"><i class="icofont icofont-briefcase-alt-1"></i><span> Careers</span></a></li>
 				</ul>
 			</div>
 			<div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>

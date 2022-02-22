@@ -1,14 +1,15 @@
 <?php
 
-use App\Http\Controllers\admin\AnnualReportController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PhotoController;
+use App\Http\Controllers\VideosController;
 use App\Http\Controllers\admin\PagesController;
 use App\Http\Controllers\client\HomeController;
+use App\Http\Controllers\admin\CareerController;
 use App\Http\Controllers\LocalizationController;
-use App\Http\Controllers\admin\DashboardController;
-use App\Http\Controllers\PhotoController;
 use App\Http\Controllers\PressReleaseController;
-use App\Http\Controllers\VideosController;
+use App\Http\Controllers\admin\DashboardController;
+use App\Http\Controllers\admin\AnnualReportController;
 
 /*
 |--------------------------------------------------------------------------
@@ -78,5 +79,11 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
             Route::get('/edit-case-study/{id}', [PagesController::class, 'editCaseStudies'])->name('edit-case-study');
 
         });
+        Route::get('/careers', [CareerController::class, 'index'])->name('careers');
+        Route::get('/careers-create', [CareerController::class, 'create'])->name('careers.create');
+        Route::get('/careers-edit/{id}', [CareerController::class, 'edit'])->name('careers.edit');
+
     });
 });
+
+Route::get('/careers-view/{id}/{career}', [CareerController::class, 'view'])->name('careers.view');
