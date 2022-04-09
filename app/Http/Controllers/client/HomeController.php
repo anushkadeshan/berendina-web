@@ -40,4 +40,11 @@ class HomeController extends Controller
     public function all_news(Request $request){
         return view('all-news')->with(['query'=>$request->input("query"),'cat'=>$request->input("cat")]);
     }
+
+    public function covid19(){
+        return view('covid19');
+    }
+    public function bdswhoweare(){
+        return view('pages.bds-who-we-are-new');
+    }
 }

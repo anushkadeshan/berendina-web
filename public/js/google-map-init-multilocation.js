@@ -3,9 +3,31 @@ function initialize() {
     // Multiple Markers
     var markers = [
         ['Berendina Group Head Office', 6.8877927,79.8818889],
-        ['Berendina Micro Finance Institute, B539, Nelundeniya, Kegalle', 7.2337306,80.2557616],
-        ['Berendina, Nuwara Eliya', 6.9766881,80.7630083],
-        ['Berendina Employment Center_District Office', 9.2744763,80.810398],
+        ['BMIC - Bulathkohupitiya', 7.103249, 80.334372],
+        ['BMIC - Galigamuwa', 7.229957, 80.305933],
+        ['BMIC - Kuchchaweli', 8.816214, 81.101544],
+        ['BMIC - Ginigathhena', 6.993895, 80.491900],
+        ['BMIC - Akkaraipattu', 7.121542, 81.852424],
+        ['BMIC - Kuchchaweli', 8.816214, 81.101544],
+        ['BMIC and BDS - Trincomalee', 8.565156, 81.235115],
+        ['BMIC - Chenkaladi', 7.786404, 81.592189],
+        ['BMIC - Kaluwanchikkudy', 7.520819, 81.788019],
+        ['BMIC - Kalmunai', 7.415480, 81.816636],
+        ['BMIC - Kahatagasdigiliya', 8.424284, 80.684152],
+        ['BMIC - Mullaitivu', 9.275145, 80.811920],
+        ['BMIC - Kilinochchi', 9.404784, 80.407932],
+        ['BMIC - Dehiowita', 6.991541, 80.263435],
+        ['BMIC - Serunuwara', 8.322177, 81.298805],
+        ['BMIC - MaNuPa', 8.317382, 80.399995],
+        ['BMIC - Dickoya', 6.887405, 80.601109],
+        ['BMIC - Ipalogama', 8.092633, 80.518156],
+        ['BMIC - Welimada ', 6.898012, 80.912774],
+        ['BMIC - Horowapathana', 8.543730, 80.825409],
+        ['BMIC - Arayampathy', 7.673712, 81.732941],
+        ['BMIC - Mawanella', 7.250895, 80.448614],
+        ['BMIC - Ragala', 7.014525, 80.860505],
+        ['BMIC - Valachchenai ', 7.863977, 81.537643],
+        ['BMIC - Vavuniya', 8.756566, 80.490636],
     ];
                         
     // Info Window Content
@@ -15,15 +37,103 @@ function initialize() {
         '<p>Address</p>' +
         '</div>'],
         ['<div class="info_content">' +
-        '<h3>Berendina Kegalle</h3>' +
+        '<h3>BMIC - Bulathkohupitiya</h3>' +
         '<p>Address</p>' +
         '</div>'],
         ['<div class="info_content">' +
-        '<h3>Berendina Nuwara Eliya</h3>' +
+        '<h3>BMIC - Galigamuwa</h3>' +
         '<p>Address.</p>' +
         '</div>'],
         ['<div class="info_content">' +
-        '<h3>Berendina Mullaitivu</h3>' +
+        '<h3>BMIC - Kuchchaweli</h3>' +
+        '<p>Address</p>' +
+        '</div>'],
+        ['<div class="info_content">' +
+        '<h3>BMIC - Ginigathhena</h3>' +
+        '<p>Address</p>' +
+        '</div>'],
+        ['<div class="info_content">' +
+        '<h3>BMIC - Akkaraipattu</h3>' +
+        '<p>Address</p>' +
+        '</div>'],
+        ['<div class="info_content">' +
+        '<h3>BMIC - Kuchchaweli</h3>' +
+        '<p>Address</p>' +
+        '</div>'],
+        ['<div class="info_content">' +
+        '<h3>BMIC and BDS - Trincomalee</h3>' +
+        '<p>Address</p>' +
+        '</div>'],
+        ['<div class="info_content">' +
+        '<h3>BMIC - Chenkaladi</h3>' +
+        '<p>Address</p>' +
+        '</div>'],
+        ['<div class="info_content">' +
+        '<h3>BMIC - Kaluwanchikkudy</h3>' +
+        '<p>Address</p>' +
+        '</div>'],
+        ['<div class="info_content">' +
+        '<h3>BMIC - Kalmunai</h3>' +
+        '<p>Address</p>' +
+        '</div>'],
+        ['<div class="info_content">' +
+        '<h3>BMIC - Kahatagasdigiliya</h3>' +
+        '<p>Address</p>' +
+        '</div>'],
+        ['<div class="info_content">' +
+        '<h3>BMIC - Mullaitivu</h3>' +
+        '<p>Address</p>' +
+        '</div>'],
+        ['<div class="info_content">' +
+        '<h3>BMIC - Kilinochchi</h3>' +
+        '<p>Address</p>' +
+        '</div>'],
+        ['<div class="info_content">' +
+        '<h3>BMIC - Dehiowita  </h3>' +
+        '<p>Address</p>' +
+        '</div>'],
+        ['<div class="info_content">' +
+        '<h3>BMIC - Serunuwara </h3>' +
+        '<p>Address</p>' +
+        '</div>'],
+        ['<div class="info_content">' +
+        '<h3>BMIC - MaNuPa </h3>' +
+        '<p>Address</p>' +
+        '</div>'],
+        ['<div class="info_content">' +
+        '<h3>BMIC - Dickoya </h3>' +
+        '<p>Address</p>' +
+        '</div>'],
+        ['<div class="info_content">' +
+        '<h3>BMIC - Ipalogama </h3>' +
+        '<p>Address</p>' +
+        '</div>'],
+        ['<div class="info_content">' +
+        '<h3>BMIC - Welimada </h3>' +
+        '<p>Address</p>' +
+        '</div>'],
+        ['<div class="info_content">' +
+        '<h3>BMIC - Horowapathana  </h3>' +
+        '<p>Address</p>' +
+        '</div>'],
+        ['<div class="info_content">' +
+        '<h3>BMIC - Arayampathy   </h3>' +
+        '<p>Address</p>' +
+        '</div>'],
+        ['<div class="info_content">' +
+        '<h3>BMIC - Mawanella</h3>' +
+        '<p>Address</p>' +
+        '</div>'],
+        ['<div class="info_content">' +
+        '<h3>BMIC - Ragala</h3>' +
+        '<p>Address</p>' +
+        '</div>'],
+        ['<div class="info_content">' +
+        '<h3>BMIC - Valachchenai </h3>' +
+        '<p>Address</p>' +
+        '</div>'],
+        ['<div class="info_content">' +
+        '<h3>BMIC - Vavuniya </h3>' +
         '<p>Address</p>' +
         '</div>'],
     ];
@@ -34,6 +144,29 @@ function initialize() {
         ['images/map-marker3.png'],
         ['images/map-marker3.png'],
         ['images/map-marker3.png'],
+        ['images/map-marker3.png'],
+        ['images/map-marker3.png'],
+        ['images/map-marker3.png'],
+        ['images/map-marker4.png'],
+        ['images/map-marker3.png'],
+        ['images/map-marker3.png'],
+        ['images/map-marker3.png'],
+        ['images/map-marker3.png'],
+        ['images/map-marker3.png'],
+        ['images/map-marker3.png'],
+        ['images/map-marker3.png'],
+        ['images/map-marker3.png'],
+        ['images/map-marker3.png'],
+        ['images/map-marker3.png'],
+        ['images/map-marker3.png'],
+        ['images/map-marker3.png'],
+        ['images/map-marker3.png'],
+        ['images/map-marker3.png'],
+        ['images/map-marker3.png'],
+        ['images/map-marker3.png'],
+        ['images/map-marker3.png'],
+        ['images/map-marker3.png'],
+
     ];
 
 
@@ -59,7 +192,7 @@ function initialize() {
         mapTypeControl: true,
         streetViewControl: true,
         overviewMapControl: true,
-        styles: THEMEMASCOT_googlemap_styles[map_style ? map_style : 'style9'],
+        styles: THEMEMASCOT_googlemap_styles[map_style ? map_style : 'dark'], 
         mapTypeId: 'roadmap'
     };
                     

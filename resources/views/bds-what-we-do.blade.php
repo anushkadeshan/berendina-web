@@ -21,7 +21,7 @@
     </div>
     <div style="margin-top: 0;">
 
-        <livewire:client.bds.what-we-do/>
+        <livewire:client.bds.what-we-do2/>
 
         <!-- Footer -->
 

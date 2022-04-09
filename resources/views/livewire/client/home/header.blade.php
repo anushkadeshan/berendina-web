@@ -32,8 +32,10 @@
                         <div class="widget no-border m-0">
                             <ul
                                 class="social-icons icon-dark icon-circled icon-theme-colored icon-sm pull-right flip sm-pull-none sm-text-center mt-sm-15">
-                                <li><a href="#"><i class="fa fa-facebook text-white"></i></a></li>
-                                <li><a href="#"><i class="fa fa-youtube text-white"></i></a></li>
+                                <li><a target="_blank" href="https://www.facebook.com/berendina.org"><i class="fa fa-facebook text-white"></i></a></li>
+                                <li><a target="_blank" href="#"><i class="fa fa-youtube text-white"></i></a></li>
+                                <li><a target="_blank" href="https://twitter.com/GroupBerendina"><i class="fa fa-twitter text-white"></i></a></li>
+                                <li><a target="_blank" href="https://www.linkedin.com/company/berendina-group/"><i class="fa fa-linkedin text-white"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -77,7 +79,7 @@
                 </div>
             </div>
         </div>
-        <div class="header-nav ">
+        <div class="header-nav">
             <div class="header-nav-wrapper navbar-scrolltofixed bg-light">
                 <div class="container">
                     <nav id="menuzord" class="menuzord blue">
@@ -94,7 +96,8 @@
                             </li>
                             <li><a class="{{Request::is('bmic-about-us') ? 'menuactive' : 'none;' }}" href="">BMIC</a>
                                 <ul class="dropdown">
-                                    <li><a href="{{url('bmic-about-us')}}">About Us</a></li>
+                                    <li><a href="{{url('bmic-about-us')}}">Who We Are</a></li>
+                                    <li><a href="{{url('bmic-our-services')}}">Our Services</a></li>
                                     <li><a href="{{url('bmic')}}">Micro Credit</a></li>
                                 </ul>
                             </li>
@@ -107,9 +110,11 @@
                                     <li><a class="{{Request::is('all-news')}} ? 'menuactive' : 'none;' " href="{{url('all-news')}}">All Berendina News</a></li>
                                 </ul>
                             </li>
+                            <li><a class="{{Request::is('covid-19') ? 'menuactive' : 'none;' }}" href="{{url('covid-19')}}">Covid 19</a></li>
                             <li><a class="{{Request::is('careers') ? 'menuactive' : 'none;' }}" href="{{url('careers')}}">Careers</a></li>
                             <li><a class="{{Request::is('contact-us') ? 'menuactive' : 'none;' }}" href="{{url('contact-us')}}">Contacts</a></li>
                         </ul>
+                        {{--
                         <ul class="list-inline pull-right flip hidden-sm hidden-xs">
                             <li class="mt-15">
                                 <div class="form-group">
@@ -121,6 +126,7 @@
                                    >{{__('msg.search')}}</a>
                             </li>
                         </ul>
+                        --}}
                     </nav>
                 </div>
             </div>

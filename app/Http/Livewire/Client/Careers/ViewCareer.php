@@ -2,9 +2,12 @@
 
 namespace App\Http\Livewire\Client\Careers;
 
-use App\Models\Admin\JobApplication;
+use App\Mail\SendCV;
 use Livewire\Component;
 use Livewire\WithFileUploads;
+use App\Models\Admin\JobApplication;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Storage;
 
 class ViewCareer extends Component
 {
@@ -23,6 +26,7 @@ class ViewCareer extends Component
     }
 
     public function save(){
+       //dd(storage_path());
         $this->validate([
             'name' => 'required',
             'sex' => 'required',
@@ -47,6 +51,9 @@ class ViewCareer extends Component
             $this->cv = '';
             $this->message = '';
 
+            $data = JobApplication::with('career')->find($application->id);
+            //dd($data);
+            Mail::to('deshan@bds.berendina.org')->send(new SendCV($data));
             session()->flash('message', trans('msg.Job Application successfully recived.'));
         }
     }

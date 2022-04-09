@@ -310,6 +310,24 @@ the Central Bank of Sri Lanka.',
 'Maximum upload file size: 12 MB' => 'Maximum upload file size: 12 MB',
 'Job Application successfully recived.' => 'Job Application successfully recived.',
 
+'Interested in discussing?' => 'Interested in discussing?',
+'Your Messeage sent successfully' => 'Your Messeage sent successfully',
+'Quick Contact' => 'Quick Contact',
+'Useful Links' => 'Useful Links',
+'Latest News' => 'Latest News',
+
+'Disaster Relief Activities on COVID-19 Pandemic' => 'Disaster Relief Activities on COVID-19 Pandemic',
+'background' => 'Background',
+'Strategic cross cutting themes' => 'Strategic cross cutting themes',
+'Gender Equality and Women Empowerment' => 'Gender Equality and Women Empowerment',
+'Environment Sustainability' => 'Environment Sustainability',
+'Inclusion of persons with disabilities' => 'Inclusion of persons with disabilities',
+
+//cross cutting themes
+'BDS ensures that the all-development initiatives taken by the organization would address increased participation of women and inclusive decision making. Capacity of the women at the household is assed with more attention to include them into the possible economic development initiatives as well. BDS puts its utmost effort to maintain the gender balance in the staff and builds the capacity of the staff in terms of gender and development to improve their understanding on the concept and make sure it is reflected in all the initiatives.' => 'BDS ensures that the all-development initiatives taken by the organization would address increased participation of women and inclusive decision making. Capacity of the women at the household is assed with more attention to include them into the possible economic development initiatives as well. BDS puts its utmost effort to maintain the gender balance in the staff and builds the capacity of the staff in terms of gender and development to improve their understanding on the concept and make sure it is reflected in all the initiatives.',
+'All BDS activities are environment sensitive and focused at sustainability of it. BDS does not support the activities that harm the environment. Especially during the construction process BDS obtains environment report from the relevant authorities to be more vigilant on that aspect. Environmental aspects are taken into account in any agriculture work undertaken with private sector partnership as well.' => 'All BDS activities are environment sensitive and focused at sustainability of it. BDS does not support the activities that harm the environment. Especially during the construction process BDS obtains environment report from the relevant authorities to be more vigilant on that aspect. Environmental aspects are taken into account in any agriculture work undertaken with private sector partnership as well.',
+'According to the population and housing information of 2012 there are 1,617,924 impaired persons in the total population who have either a mental or a physical impairment out of which 695,263 are males and 922,661 are females. The majority of the people with disabilities are poor. Poverty is a consequence of disability since people with disabilities often lack access to education, health services and income-generating activities. They are often denied their human, social and economic rights which contribute to high levels of vulnerability and exclusion. People with disabilities have the right to work. This has been enshrined in several national Acts and international Conventions ratified by the government of Sri Lanka, but policy implementation measures are still inadequate to enable them to exercise that right. BDS ensures that the all development initiatives taken by the organization would provide reasonable space for the participation of persons with disabilities.' => 'According to the population and housing information of 2012 there are 1,617,924 impaired persons in the total population who have either a mental or a physical impairment out of which 695,263 are males and 922,661 are females. The majority of the people with disabilities are poor. Poverty is a consequence of disability since people with disabilities often lack access to education, health services and income-generating activities. They are often denied their human, social and economic rights which contribute to high levels of vulnerability and exclusion. People with disabilities have the right to work. This has been enshrined in several national Acts and international Conventions ratified by the government of Sri Lanka, but policy implementation measures are still inadequate to enable them to exercise that right. BDS ensures that the all development initiatives taken by the organization would provide reasonable space for the participation of persons with disabilities.',
+
 
 
 

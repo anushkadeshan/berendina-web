@@ -174,7 +174,7 @@
             </li>
 
             <li style="margin-bottom: 10px;background-color:#4f93ce">
-                <a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" style=" color:#fff">Strategic cross cutting components </a>
+                <a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" style=" color:#fff">Strategic cross cutting Themes </a>
                 <ul class="collapse {{$gender || $envirnment || $disability || $youth? 'show': ''}} list-unstyled" id="pageSubmenu2">
                     <li class="{{$gender ? 'active': ''}}" style="margin-bottom: 10px; background-color:#4f93ce">
                         <a style="font-size: 16px;  color:#fff" href="" wire:click.prevent="loadGender">Gender Equality and Women Empowerment</a>

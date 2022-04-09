@@ -75,7 +75,7 @@
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <label for="form_sex">@lang('msg.Sex') <small>*</small></label>
-                                    <select id="form_sex" name="form_sex" wire:model.defer="sex" class="form-control required">
+                                     <select id="form_sex" name="form_sex" wire:model.defer="sex" class="form-control required">
                                         <option value="">Select Option</option>
                                         <option value="Male">Male</option>
                                         <option value="Female">Female</option>
@@ -99,7 +99,7 @@
                         </div>
                         <div class="form-group">
                             <label for="form_attachment">@lang('msg.C/V Upload')</label>
-                            <input id="form_attachment" name="form_attachment" wire:model.defer="cv" class="file" type="file"
+                            <input id="form_attachment" name="form_attachment" wire:model="cv" class="file" type="file"
                                 data-show-upload="false" data-show-caption="true">
                             <small>@lang('msg.Maximum upload file size: 12 MB')</small>
                         </div>
@@ -109,11 +109,19 @@
                 <div class="modal-footer">
                     @if (session()->has('message'))
                     <div class="alert alert-success dark mt-4" role="alert" x-data="{ show: true }" x-show="show" x-init="setTimeout(() => show = false, 3000)">
-                        <p>{{ session('message') }}</p>
+                        <p class="text-left">{{ session('message') }}</p>
                         </div>
                     @endif
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-dark btn-flat  btn-theme-colored" wire:click.prevent="save">@lang('msg.Apply')</button>
+                    <button type="button" class="btn btn-dark btn-flat  btn-theme-colored" wire:click.prevent="save">
+                        <div wire:loading wire:target="save">
+                            Please Wait...
+                        </div>
+                        <div wire:loading.remove wire:target="save">
+                            @lang('msg.Apply')
+                        </div>
+                        
+                    </button>
                 </div>
             </div>
         </div>

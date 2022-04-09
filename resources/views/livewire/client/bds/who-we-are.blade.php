@@ -1,20 +1,7 @@
 <div class="wrapper">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/orgchart/3.1.1/css/jquery.orgchart.min.css" integrity="sha512-bCaZ8dJsDR+slK3QXmhjnPDREpFaClf3mihutFGH+RxkAcquLyd9iwewxWQuWuP5rumVRl7iGbSDuiTvjH1kLw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        .navbar {
-            padding: 15px 10px;
-            background: #4f93ce;
-            border: none;
-            border-radius: 0;
-            margin-bottom: 40px;
-            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-        }
 
-        .navbar-btn {
-            box-shadow: none;
-            outline: none !important;
-            border: none;
-        }
 
         .line {
             width: 100%;
@@ -165,36 +152,72 @@
           .loading-overlay.is-active {
             display: flex;
           }
-    </style>
-    <!-- Sidebar  -->
-    <nav id="sidebar">
-        <ul class="list-unstyled components">
-            <li class="{{$about_us ? 'active': ''}}" style="margin-bottom: 10px; background-color:#4f93ce">
-                <a style="font-size: 16px; color:#fff" href="" wire:click.prevent="loadAboutUs">About Us</a>
-            </li>
-            <li class="{{$history ? 'active': ''}}" style="margin-bottom: 10px;background-color:#4f93ce">
-                <a style="font-size: 16px; color:#fff" href="#" wire:click.prevent="loadHistory">History - Milestones</a>
-            </li>
-            <li style="margin-bottom: 10px; background-color:#4f93ce ">
-                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" style="color:#fff">Leadership</a>
-                <ul class="collapse {{$doners || $board || $management || $org? 'show': ''}} list-unstyled" id="pageSubmenu">
-                    <li class="{{$board ? 'active': ''}}" style="margin-bottom: 10px; background-color:#4f93ce">
-                        <a href="#" style="color:#fff" wire:click.prevent="loadBoard">Board and Goverance</a>
-                    </li>
-                    <li class="{{$org ? 'active': ''}}" style="margin-bottom: 10px; background-color:#4f93ce">
-                        <a href="#" style="color:#fff" wire:click.prevent="loadOrg">Organization Structure</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="{{$partners ? 'active': ''}}" style="margin-bottom: 10px; background-color:#4f93ce"">
-                <a style="font-size: 16px; color:#fff" href="#" wire:click.prevent="loadPartners">Partners</a>
-            </li>
-            <li class="{{$financial ? 'active': ''}}" style="margin-bottom: 10px; background-color:#4f93ce"">
-                <a style="font-size: 16px; color:#fff" href="#" wire:click.prevent="loadFinancial">Financial Highlights</a>
-            </li>
 
-        </ul>
-    </nav>
+          @media only screen and (min-width: 480px) { 
+            .mobilemenu {display: block;}
+          }
+
+          @media only screen and (min-width: 1024px) {
+            .mobilemenu {
+                display: none;
+            }
+        }
+    </style>
+    <div class="row">
+        <div class="col-md-12">
+            <nav id="menuzord mobilemenu" class="menuzord blue mobilemenu pl-0 ml-0 w-3" style="width: 100px;">
+                <ul class="menuzord-menu" style="background-color: #4f93ce;">
+                    <li class="{{$about_us ? 'active': ''}}" style="margin-bottom: 10px; background-color:#4f93ce">
+                        <a style="font-size: 16px; color:#fff" href="" wire:click.prevent="loadAboutUs">About Us</a>
+                    </li>
+                    <li class="{{$history ? 'active': ''}}" style="margin-bottom: 10px;background-color:#4f93ce">
+                        <a style="font-size: 16px; color:#fff" href="#" wire:click.prevent="loadHistory">History - Milestones</a>
+                    </li>
+                    <li><a class="{{Request::is('about-us') ? 'menuactive' : 'none;' }}" href="{{url('/about-us')}}">About Us</a></li>
+                    <li><a class="{{Request::is('covid-19') ? 'menuactive' : 'none;' }}" href="{{url('covid-19')}}">Covid 19</a></li>
+                    <li><a class="{{Request::is('careers') ? 'menuactive' : 'none;' }}" href="{{url('careers')}}">Careers</a></li>
+                    <li><a class="{{Request::is('contact-us') ? 'menuactive' : 'none;' }}" href="{{url('contact-us')}}">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <!-- Sidebar  -->
+            <nav id="sidebar" >
+                <ul class="list-unstyled components">
+                    <li class="{{$about_us ? 'active': ''}}" style="margin-bottom: 10px; background-color:#4f93ce">
+                        <a style="font-size: 16px; color:#fff" href="" wire:click.prevent="loadAboutUs">About Us</a>
+                    </li>
+                    <li class="{{$history ? 'active': ''}}" style="margin-bottom: 10px;background-color:#4f93ce">
+                        <a style="font-size: 16px; color:#fff" href="#" wire:click.prevent="loadHistory">History - Milestones</a>
+                    </li>
+                    <li style="margin-bottom: 10px; background-color:#4f93ce ">
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" style="color:#fff">Leadership</a>
+                        <ul class="collapse {{$doners || $board || $management || $org? 'show': ''}} list-unstyled" id="pageSubmenu">
+                            <li class="{{$board ? 'active': ''}}" style="margin-bottom: 10px; background-color:#4f93ce">
+                                <a href="#" style="color:#fff" wire:click.prevent="loadBoard">Board and Goverance</a>
+                            </li>
+                            <li class="{{$management ? 'active': ''}}" style="margin-bottom: 10px; background-color:#4f93ce">
+                                <a href="#" style="color:#fff" wire:click.prevent="loadManagement">Management Team</a>
+                            </li>
+                            <li class="{{$org ? 'active': ''}}" style="margin-bottom: 10px; background-color:#4f93ce">
+                                <a href="#" style="color:#fff" wire:click.prevent="loadOrg">Organization Structure</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="{{$partners ? 'active': ''}}" style="margin-bottom: 10px; background-color:#4f93ce"">
+                        <a style="font-size: 16px; color:#fff" href="#" wire:click.prevent="loadPartners">Partners</a>
+                    </li>
+                    <li class="{{$financial ? 'active': ''}}" style="margin-bottom: 10px; background-color:#4f93ce"">
+                        <a style="font-size: 16px; color:#fff" href="#" wire:click.prevent="loadFinancial">Financial Highlights</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
 
     <!-- Page Content  -->
     <div class="loading-overlay" wire:loading.class="is-active">
@@ -220,6 +243,11 @@
         @if($org)
         <div id="content" style="margin-top: 20px;">
             <livewire:client.bds.org />
+        </div>
+        @endif
+        @if($management)
+        <div id="content" style="margin-top: 20px;">
+            <livewire:client.bds.management />
         </div>
         @endif
         @if($partners)

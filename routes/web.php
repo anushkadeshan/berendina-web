@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PhotoController;
 use App\Http\Controllers\VideosController;
+use App\Http\Controllers\ManagementController;
 use App\Http\Controllers\admin\PagesController;
 use App\Http\Controllers\client\HomeController;
 use App\Http\Controllers\admin\CareerController;
@@ -31,6 +32,7 @@ Route::get('/about-us', [HomeController::class, 'about_us'])->name('home.about_u
 Route::get('/bmic', [HomeController::class, 'bmic'])->name('home.bmic');
 Route::get('/contact-us', [HomeController::class, 'contact_us'])->name('home.contact_us');
 Route::get('/careers', [HomeController::class, 'careers'])->name('home.careers');
+Route::get('/covid-19', [HomeController::class, 'covid19'])->name('home.covid19');
 Route::get('/all-news', [HomeController::class, 'all_news'])->name('home.all_news');
 Route::get('/berendina-image-gallery', [PhotoController::class, 'show'])->name('home.image_gallery');
 Route::get('/berendina-image-gallery/{title}/{id}', [PhotoController::class, 'showSingle'])->name('home.image_gallery_single');
@@ -40,14 +42,15 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 Route::view('/bds-about-us', 'bds-about-us');
-Route::view('/bds-who-we-are', 'bds-who-we-are');
+Route::view('/bds-who-we-are', 'bds-who-we-are2');
 Route::view('/bds-what-we-do', 'bds-what-we-do');
 Route::view('/bds-where-we-work', 'bds-where-we-work');
 Route::view('/bds-media', 'bds-media');
 Route::prefix('bds')->group(function () {
     Route::view('/about-us', 'bds-about-us');
 });
-Route::view('/bmic-about-us', 'bmic-about-us');
+Route::view('/bmic-about-us', 'bmic-who-we-are');
+Route::view('/bmic-our-services', 'bmic-services');
 Route::prefix('bmic')->group(function () {
     Route::view('/about-us', 'bmic-about-us');
 
@@ -80,6 +83,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
 
         });
         Route::get('/careers', [CareerController::class, 'index'])->name('careers');
+        Route::resource('management', ManagementController::class);
         Route::get('/careers-create', [CareerController::class, 'create'])->name('careers.create');
         Route::get('/careers-edit/{id}', [CareerController::class, 'edit'])->name('careers.edit');
 
