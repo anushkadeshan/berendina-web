@@ -17,11 +17,11 @@ data-wow-delay="0.3s">
             <div class="row">
 
                 <!-- Google Map HTML Codes -->
-                <div id="map-canvas-multipointer" data-mapstyle="default" data-height="500" data-zoom="7"
+                <div id="map-canvas-multipointer" data-mapstyle="default" data-height="600" data-zoom="8"
                     data-marker="images/map-marker.png">
                 </div>
                 <!-- Google Map Javascript Codes -->
-                <script src="http://maps.google.com/maps/api/js?key=AIzaSyAYWE4mHmR9GyPsHSOVZrSCOOljk8DU9B4"></script>
+                <script src="https://maps.google.com/maps/api/js?key=AIzaSyAYWE4mHmR9GyPsHSOVZrSCOOljk8DU9B4"></script>
                 <script src="{{asset('js/google-map-init-multilocation.js')}}"></script>
 
             </div>

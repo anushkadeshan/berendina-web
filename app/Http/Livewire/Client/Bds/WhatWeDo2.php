@@ -6,9 +6,9 @@ use Livewire\Component;
 
 class WhatWeDo2 extends Component
 {
-    public $key = false;
+    public $key = true;
     public $disaster = false;
-    public $gender = true;
+    public $gender = false;
     public $envirnment = false;
     public $disability = false;
     public $youth = false;

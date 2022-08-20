@@ -56,13 +56,13 @@
                                             <h4 class="entry-title text-white text-uppercase m-0 mt-5"><a href="#">
                                                 @switch(session('locale'))
                                                     @case('ta')
-                                                        {{$n->ta_title}}
+                                                        {{ Str::limit($n->ta_title, 40) }}
                                                     @break
                                                     @case('si')
-                                                        {{$n->si_title}}
+                                                        {{ Str::limit($n->si_title, 40) }}
                                                     @break
                                                     @default
-                                                        {{$n->title}}
+                                                        {{ Str::limit($n->title, 40) }}
                                                 @endswitch
                                             </a></h4>
                                         </div>

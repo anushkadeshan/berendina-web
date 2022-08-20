@@ -4,7 +4,7 @@
             <img src="{{URL::asset('storage/photos/bds/covid.jpg')}}" alt="">
         </div>
         <div class="col-md-7">
-            <h2 class="mt-10 line-bottom"><span class="font-weight-300">Covid </span> Relief</h2>
+            <h2 class="mt-10 line-bottom"><span class="font-weight-300">COVID </span> Relief</h2>
             <p class="text-justify mt-10">
                 As an organization, we leveraged towards distributing the necessary financial aid and emergency
                 deliveries to hard hit areas of the society whose lives and livelihoods have been threatened by the

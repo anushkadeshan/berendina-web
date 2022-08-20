@@ -25,7 +25,7 @@
                                     enterprise development and related activities.
                                 </p>
                                 <li style="font-size: 13px;"><i class="fa fa-arrow-right"></i>Current Appointments</li>
-                                Director – Berendina Development Services (Guarantee) Limited
+                                Managing Director – Berendina Development Services (Guarantee) Limited
                             </ul>
                         </div>
                     </div>
@@ -88,19 +88,7 @@
                                     2017.</li>
                                 <li style="font-size: 13px;"><i class="fa fa-arrow-right"></i>Skills & Experience</li>
                                 <p style="text-align: justify;">
-                                    Mr. Charith holds a Master of Business Administration from Cardiff Metropolitan
-                                    University, UK and a B.Sc. Public Management (Special) Degree from the University of
-                                    Sri Jayewardenepura. He is also a Certified Microfinance Management Professional at
-                                    the Boulder Institute of Microfinance, US. Further, he is at the final stage of
-                                    Chartered Accountancy at the Institute of Chartered Accountants of Sri Lanka
-                                    (ICASL). Apart from being a Founding Director of BMIC, he also served as the General
-                                    Manager of Berendina Microcredit Institute (Guarantee) Limited, and the General
-                                    Manager - Finance & Administration for Berendina Group, before assuming his present
-                                    position. He had been a Board Member and the Treasurer of the Lanka Microfinance
-                                    Practitioners’ Association for 2014/2015 and 2015/2016 years. He has experience in
-                                    the field of Auditing, Accounting & Finance and Microfinance in the private and
-                                    ‘NGO’ sector establishments over 20 years and has attended many national &
-                                    international microfinance conferences and events.
+                                    Mr. Charith holds a Master of Business Administration from Cardiff Metropolitan University, UK and a B.Sc. Public Management (Special) Degree from the University of Sri Jayewardenepura. He is also a Certified Microfinance Management Professional by the Boulder Institute of Microfinance, US. Further, he is at the final stage of Chartered Accountancy at the Institute of Chartered Accountants of Sri Lanka (ICASL). Apart from being a Founding Director of BMIC, he also served as the General Manager of Berendina Microcredit Institute (Guarantee) Limited, and the General Manager - Finance & Administration for Berendina Group, before assuming his present position. He was a Board Member and the Treasurer of the Lanka Microfinance Practitioners’ Association during the period of 2014/2015 and 2015/2016. He has experience in the field of Auditing, Accounting & Finance and Microfinance in the private and ‘NGO’ sector establishments over 20 years and has attended many national and international microfinance conferences and events.
                                 </p>
 
                             </ul>
@@ -132,7 +120,7 @@
                                     Management Accountants of Sri Lanka (ACMA). She also holds a Certificate in Taxation
                                     from the Institute of Chartered Accountants of Sri Lanka. Prior to assuming her
                                     duties as a Director of BMIC, she was the General Manager – Finance, Admin and HR
-                                    for Berendina Group. She also serves as a part time consultant. Ms. Vinodini has
+                                    for Berendina Group. She also serves as a part time Consultant. Ms. Vinodini has
                                     more than 17 years of experience in finance, procurement, compliance monitoring and
                                     in successfully rolling out an integrated business ERP system.
                                 </p>
@@ -186,22 +174,17 @@
                 <div class="item">
                     <div class="row-fluid">
                         <div class="col-md-3">
-                            <img src="{{asset('images/ha.jpg')}}" alt="P Harshini Andradi">
+                            <img src="{{asset('images/ks.png')}}" alt="Kumudini Saravanamuttu">
                         </div>
                         <div class="col-md-9">
                             <ul class="list-icon theme-colored">
-                                <h4 class="mt-0 mb-0 text-black-666">P Harshini Andradi</h4>
+                                <h4 class="mt-0 mb-0 text-black-666">Kumudini Saravanamuttu</h4>
                                 <h2 class="line-bottom mt-0">Independent Non-Executive Director </h2>
                                 <li style="font-size: 13px;"><i class="fa fa-arrow-right"></i>Appointed to the Board on
-                                    9th May 2019 </li>
+                                    1st January 2022 </li>
                                 <li style="font-size: 13px;"><i class="fa fa-arrow-right"></i>Skills & Experience</li>
                                 <p style="text-align: justify;">
-                                    Ms. Harshini was a former consultant to BMIC from March 2016 until May 2019. She has
-                                    more than 26 years of professional experience in the Banking & Financial services
-                                    industry and has headed the Finance function of several Licensed Commercial Banks
-                                    (local & Branches of foreign banks) and a Licensed Primary dealer and Asset
-                                    management company. She is an ACMA-UK and holds MBA from PIM. She also holds a B.
-                                    Com Special (Hons) degree from University of Sri Jayewardenepura.
+                                    Ms. Kumudini has 36 years of extensive experience at the Central Bank of Sri Lanka, Ministry of Finance – Sri Lanka and Greater Colombo Economic Commission. Ms. Kumudini holds a Master of Economics from the University of Manchester, U.K. and B.Sc (Econ) Honors from the University of London (Queen Mary College), UK.
                                 </p>
 
                             </ul>

@@ -1,7 +1,7 @@
 <div>
     {{-- <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1QjHcCnbgtl7xqkw_pEC82--o4_qjVIyE" width="640" height="480"></iframe>--}}
     <div class="container-fluid">
-        <div id="myMap" style='position:relative;width:100%;height:400px;'></div>
+        <div id="myMap" style='position:relative;width:100%;height:600px;'></div>
     </div>
 </div>
 @push('scripts')
@@ -11,8 +11,8 @@
     {
         var map = new Microsoft.Maps.Map('#myMap', {
             credentials: 'AriRJgQwqfFtUVyixXJKcIzcNaA7au3N6-BmzoedkmMJjoFf09TkfNUdoNaDccRG',
-            center: new Microsoft.Maps.Location(6.927079, 79.861244),
-            mapTypeId: Microsoft.Maps.MapTypeId.aerial,
+            center: new Microsoft.Maps.Location(6.927079, 80.861244),
+            mapTypeId: Microsoft.Maps.MapTypeId.road,
             allowHidingLabelsOfRoad: true,
             zoom: 7
         });

@@ -1,9 +1,7 @@
 <div>
     <h2 class="line-bottom">Our Partners</h2>
     <p style="text-align: justify;">
-        Over the years, BMIC successfully nurtured various partnerships across a cross section of local and
-        international organizations. These partners play a key role in BMIC’s efforts to build a more equitable society
-        through the raising of funds as well as increasing required knowledge and expertise in the organization.
+        Over the years, BMIC has successfully nurtured various partnerships across a cross section of local and international organizations. These partners play a key role in BMIC’s efforts to build a more equitable society through raising of funds as well as increasing required knowledge and expertise in the organization.
     </p>
     
 
@@ -23,7 +21,7 @@
 
     <h2 class="line-bottom">Memberships</h2>
     <p style="text-align: justify;">
-        During the past decades, BMIC obtained memberships in key national and international microfinance and enterprise development industry associations. These associations enables BMIC to strengthen its network, share knowledge and improve visibility. 
+        During the past decades, BMIC obtained memberships in key national and international associations connected with microfinance and enterprise development industry. These associations enable BMIC to strengthen its network, share knowledge and improve visibility.
     </p>
     
 
@@ -32,7 +30,7 @@
         <li style="font-size: 13px;"><i class="fa fa-arrow-right"></i>Banking With The Poor Network (BWTP) </li>
         <li style="font-size: 13px;"><i class="fa fa-arrow-right"></i>Start and Improve Your Business Association (SIYB) </li>
         <li style="font-size: 13px;"><i class="fa fa-arrow-right"></i>Sri Lanka Evaluation Association (SLEvA)</li>
-        <li style="font-size: 13px;"><i class="fa fa-arrow-right"></i>The Institute of Chartered Accountancy of Sri Lanka</li>
+        <li style="font-size: 13px;"><i class="fa fa-arrow-right"></i>The Institute of Chartered Accountants of Sri Lanka</li>
     </ul>
 
 </div>

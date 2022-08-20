@@ -197,25 +197,25 @@
         }
     </style>
     <section class="timeline">
+        <p>BMIC is the Microfinance Arm of Berendina. BMIC follows triple bottom line approach. It has a strong focus on financial inclusion with client centric products and services.</p>
         <ul>
             <li>
                 <div>
-                    <time>1992-2007</time>
-                    <p style="text-align: justify;">Berendina Foundation the INGO started providing financial services
-                        for deserving
-                        families in Garagoda Village in Yatiyanthota, Kegalle District since 1992 and initially provided
-                        interest free loans to micro entrepreneurs with the grants received from Berendina Stichting in
-                        Nederland, the founder of Berendina in Sri Lanka. Later on, the organization started to provide
-                        loans with minimum interests like 1%, 2% 3% etc...</p>
+                    <time>1986</time>
+                    <p style="text-align: justify;">
+                        Providing small grants for poor people in the Lower Garagoda village in Yatiyantota division managed by Mrs. Eva Mudalige and village leaders</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <time>1992</time>
+                    <p style="text-align: justify;">Berendina Foundation started to provide financial and other services for deserving families in Garagoda and to all the villages in Yatiyantota division and Bulathkohupitiya division since 1992. Initially the Foundation provided interest free loans to micro entrepreneurs with the grants received from Berendina Stichting in Netherlands and gradually increased the interest rates over the years.</p>
                 </div>
             </li>
             <li>
                 <div>
                     <time>2007</time>
-                    <p style="text-align: justify;">Financial service operation of Berendina Foundation was incorporated
-                        as septate legal entity
-                        under the name of Berendina Microfinance Institute (Gte) Ltd (BMI) under the Companies Act No.
-                        17 of 1982 as guaranteed organization.</p>
+                    <p style="text-align: justify;">Financial service operation of Berendina Foundation was incorporated as aseparate legal entity under the name of Berendina Microfinance Institute (Gte) Ltd (BMI) under the Companies Act No. 17 of 1982 as a guaranteed company. Commenced operations in Anuradhapura, Kegalle and Nuwara Eliya Districts</p>
                 </div>
             </li>
             <li>
@@ -239,43 +239,28 @@
             <li>
                 <div>
                     <time>2014</time>
-                    <p style="text-align: justify;">Incorporated Berendina Micro Investments Co Ltd (BMIC) under the
-                        Companies Act No. 7 of 2007 mainly to approach the foreign borrowing as the Guaranteed
-                        organization is prohibited to do so. Accordingly, both BMI & BMIC carried out parallel
-                        operation.
+                    <p style="text-align: justify;">Incorporated Berendina Micro Investments Co Ltd (BMIC) under the Companies Act No. 7 of 2007 mainly to approach the foreign borrowing as the Guaranteed companies are prohibited to do so. Accordingly, both BMI & BMIC continued their operations parallelly.
                     </p>
                 </div>
             </li>
             <li>
                 <div>
                     <time>2016</time>
-                    <p style="text-align: justify;">Commenced operations in Ampara, Kilinochchi, Mullaitivu, and
-                        Vavuniya districts.
-                        <br>
-                        Applying triple bottom-line approach of People, Planet & Profit the organization initiated
-                        Environmental Protection Program.
+                    <p style="text-align: justify;">Commenced operations in Ampara, Kilinochchi, Mullaitivu, and Vavuniya districts. Applying triple bottom-line approach of People, Planet & Profit the organization initiated Environmental Protection Program.
                     </p>
                 </div>
             </li>
             <li>
                 <div>
                     <time>2017</time>
-                    <p style="text-align: justify;">Microfinance operation of Brerendina (BMI & BMIC) merged in order to
-                        provide extensive services to its clients and continued all operations under one wing as BMIC.
-                        The sister organization, Berendina Development Services (Gte) Ltd (BDS) become only shareholder
-                        of BMIC.
+                    <p style="text-align: justify;">Microfinance operations of both BMI & BMIC were merged in order to provide extensive services to its clients and continued all operations under one wing as BMIC. The sister organization, Berendina Development Services (Gte) Ltd (BDS) become the only shareholder of BMIC.
                     </p>
                 </div>
             </li>
             <li>
                 <div>
                     <time>2019</time>
-                    <p style="text-align: justify;">BMIC became the first License Microfinance Company under the
-                        Microfinance Act No. 6 of 2016 from the Central Bank of Sri Lanka. As regulated organization
-                        BMIC commenced micro savings.
-                        <br>
-                        Launched an ecommerce website under the name ekade.lk in order to support rural producers to
-                        market their products.
+                    <p style="text-align: justify;">BMIC became the first License Microfinance Company to be certified under the Microfinance Act No. 6 of 2016 from the Central Bank of Sri Lanka. As regulated organization, BMIC commenced micro savings. Launched an ecommerce website under the name ekade.lk in order to support rural producers to market their products. 
                         <br>
                         Commenced operations in Badulla District.
                     </p>
@@ -284,7 +269,7 @@
             <li>
                 <div>
                     <time>2020</time>
-                    <p style="text-align: justify;">As a step of further improvement in governance structure of BMIC the shareholding structure was changed as 75% hold by founder Berendina Stichting and 25% by BDS.
+                    <p style="text-align: justify;">As a step to further the improvement in governance structure of BMIC, the shareholding structure was changed as 75% hold by founder Berendina Stichting and 25% by previous shareholder BDS.
                     </p>
                 </div>
             </li>

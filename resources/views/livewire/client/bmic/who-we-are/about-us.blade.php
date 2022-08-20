@@ -12,7 +12,7 @@
                     </div>
                     <div class="col-md-6 wow fadeInLeft">
                         <h4 class="text-theme-colored">@lang('msg.Our Mission')</h4>
-                        <p>Ensure poor have access to quality, responsible and innovative microfinance and enterprise development services at lowest possible cost in ensuring prosperous future for this segment of society in a financially sustainable manner with a motivated team while educating the general public on positive impact of microfinance.</p>
+                        <p>Ensure poor have access to quality, responsible and innovative microfinance and enterprise development services at the lowest possible cost in ensuring prosperous future for this segment of society in a financially sustainable manner with a motivated team while educating the general public on positive impact of microfinance.</p>
                     </div>
                 </div>
                 <div class="separator dotted"> </div>

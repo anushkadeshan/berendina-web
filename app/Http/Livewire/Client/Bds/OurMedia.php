@@ -14,7 +14,7 @@ class OurMedia extends Component
     public $photos = false;
     public $videos = false;
 
-    public $read_view = false;
+    public $read_view = false; 
 
     public function loadCaseStudies(){
         $this->case_studies = true;

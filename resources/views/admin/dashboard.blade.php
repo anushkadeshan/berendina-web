@@ -2,37 +2,44 @@
 @section('title', 'Sample Page')
 
 @section('css')
+<link rel="stylesheet" type="text/css" href="{{asset('assets/css/vendors/datatables.css')}}">
 @endsection
 
 @section('style')
-@endsection
-
-@section('breadcrumb-title')
-<h3>Sample Page</h3>
-@endsection
-
-@section('breadcrumb-items')
-<li class="breadcrumb-item">Pages</li>
-<li class="breadcrumb-item active">Sample Page</li>
 @endsection
 
 @section('content')
 <div class="container-fluid">
    <div class="row">
       <div class="col-sm-12">
-         <div class="card">
-            <div class="card-header">
-               <h5>Sample Card</h5>
-               <span>lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
-            </div>
-            <div class="card-body">
-               <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-            </div>
-         </div>
+         <livewire:admin.dashboard.page-views>
+      </div>
+   </div>
+   <div class="row">
+      <div class="col-sm-12">
+         <livewire:admin.dashboard.most-visited-pages>
+      </div>
+   </div>
+   <div class="row">
+      <div class="col-sm-6">
+         <livewire:admin.dashboard.top-referrers>
+      </div>
+      <div class="col-sm-6">
+         <livewire:admin.dashboard.user-types>
+      </div>
+   </div>
+   <div class="row">
+      <div class="col-sm-6">
+         <livewire:admin.dashboard.top-browsers>
       </div>
    </div>
 </div>
 @endsection
 
 @section('script')
+<script src="{{asset('assets/js/chart/apex-chart/apex-chart.js')}}"></script>
+<script src="{{asset('assets/js/chart/apex-chart/stock-prices.js')}}"></script>
+<script src="{{asset('assets/js/datatable/datatables/jquery.dataTables.min.js')}}"></script>
+<script src="{{asset('assets/js/datatable/datatables/datatable.custom.js')}}"></script>
+
 @endsection

@@ -25,7 +25,7 @@
              <div class="card-header">
                 <div class="row">
                     <div class="col-md-6">
-                       <h5>BDS Annual Reports</h5>
+                       <h5>Annual Reports</h5>
                     </div>
                     <div class="col-md-6">
                        <a style="float: right;" href="{{route('annual-reports.create')}}"><button class="btn btn-primary" type="button">Add New</button></a>

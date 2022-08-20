@@ -14,17 +14,17 @@ class FigureCounter extends Component
         $locale = app()->getLocale();
         switch ($locale) {
             case 'si':
-                $this->figures = Figure::select('figure_name_si as name', 'amount', 'icon_location')
+                $this->figures = Figure::select('figure_name_si as name', 'amount', 'icon_location','style')
                 ->get();
                 break;
             
             case 'ta':
-                $this->figures = Figure::select('figure_name_ta as name', 'amount', 'icon_location')
+                $this->figures = Figure::select('figure_name_ta as name', 'amount', 'icon_location','style')
                 ->get();
                 break;    
             
             default:
-                $this->figures = Figure::select('figure_name_en as name', 'amount', 'icon_location')
+                $this->figures = Figure::select('figure_name_en as name', 'amount', 'icon_location','style')
                 ->get();
                 break;
         }

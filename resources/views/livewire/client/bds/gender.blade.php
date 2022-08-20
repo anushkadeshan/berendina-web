@@ -473,6 +473,7 @@ figure.effect-layla:hover img {
     cursor: pointer;
 }
 </style>
+
 <div>
     <h2 class="mt-20 line-bottom">@lang('msg.Strategic cross cutting themes')</h2>
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,800,300' rel='stylesheet' type='text/css'>

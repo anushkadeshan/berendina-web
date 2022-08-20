@@ -179,7 +179,7 @@
                 <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" style=" color:#fff">Disaster Response </a>
                 <ul class="collapse {{$disaster ? 'show': ''}} list-unstyled" id="pageSubmenu">
                     <li class="{{$disaster ? 'active': ''}}" style="margin-bottom: 10px; background-color:#4f93ce">
-                        <a style="font-size: 16px; color:#fff;" href="" wire:click.prevent="loadDisaster">Covid - 19</a>
+                        <a style="font-size: 16px; color:#fff;" href="" wire:click.prevent="loadDisaster">COVID - 19</a>
                     </li>
                 </ul>
             </li>
@@ -213,7 +213,7 @@
         @endif
         @if($gender)
         <div id="content" style="padding: 20px; padding-left:40px;padding-right:40px">
-            <livewire:client.bds.gender />
+            <livewire:client.bds.cross-cutting />
         </div>
         @endif
         @if($envirnment)

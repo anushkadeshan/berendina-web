@@ -51,6 +51,11 @@ Route::prefix('bds')->group(function () {
 });
 Route::view('/bmic-about-us', 'bmic-who-we-are');
 Route::view('/bmic-our-services', 'bmic-services');
+Route::view('/bmic-social-performance-management', 'bmic-social-performance');
+Route::view('/bmic-environment', 'bmic-envirnment');
+Route::view('/bmic-annual-reports', 'bmic-annual-reports');
+Route::view('/bmic-awards-and-appreciations', 'bmic-awards');
+Route::view('/bmic-media', 'bmic-media');
 Route::prefix('bmic')->group(function () {
     Route::view('/about-us', 'bmic-about-us');
 

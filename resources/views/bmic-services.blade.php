@@ -1,6 +1,6 @@
 @extends('layouts.client.app')
 
-@section('title', 'BDS - Who We Are')
+@section('title', 'BMIC - Services')
 
 @section('content')
     <div class="main-content">
