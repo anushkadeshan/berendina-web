@@ -215,7 +215,7 @@
             <li>
                 <div>
                     <time>2007</time>
-                    <p style="text-align: justify;">Financial service operation of Berendina Foundation was incorporated as aseparate legal entity under the name of Berendina Microfinance Institute (Gte) Ltd (BMI) under the Companies Act No. 17 of 1982 as a guaranteed company. Commenced operations in Anuradhapura, Kegalle and Nuwara Eliya Districts</p>
+                    <p style="text-align: justify;">Financial service operation of Berendina Foundation was incorporated as a separate legal entity under the name of Berendina Microfinance Institute (Gte) Ltd (BMI) under the Companies Act No. 17 of 1982 as a guaranteed company. Commenced operations in Anuradhapura, Kegalle and Nuwara Eliya Districts</p>
                 </div>
             </li>
             <li>
@@ -260,7 +260,7 @@
             <li>
                 <div>
                     <time>2019</time>
-                    <p style="text-align: justify;">BMIC became the first License Microfinance Company to be certified under the Microfinance Act No. 6 of 2016 from the Central Bank of Sri Lanka. As regulated organization, BMIC commenced micro savings. Launched an ecommerce website under the name ekade.lk in order to support rural producers to market their products. 
+                    <p style="text-align: justify;">BMIC became the first License Microfinance Company to be certified under the Microfinance Act No. 6 of 2016 from the Central Bank of Sri Lanka. As regulated organization, BMIC commenced micro savings. Launched an ecommerce website under the name ekade.lk in order to support rural producers to market their products.
                         <br>
                         Commenced operations in Badulla District.
                     </p>

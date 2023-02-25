@@ -80,6 +80,10 @@
     @stack('js')
     @livewireScripts
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <x-livewire-alert::scripts />
+    <script src="{{ asset('vendor/livewire-alert/livewire-alert.js') }}"></script>
+    <x-livewire-alert::flash />
     <script type="text/javascript">
       if ($(".page-wrapper").hasClass("horizontal-wrapper")) {
             $(".according-menu.other" ).css( "display", "none" );

@@ -3,10 +3,10 @@
 namespace App\Http\Livewire\Admin\Media\VideoGallery;
 
 use App\Models\Video;
-use Mediconesystems\LivewireDatatables\Column;
-use Mediconesystems\LivewireDatatables\NumberColumn;
 use Mediconesystems\LivewireDatatables\BooleanColumn;
+use Mediconesystems\LivewireDatatables\Column;
 use Mediconesystems\LivewireDatatables\Http\Livewire\LivewireDatatable;
+use Mediconesystems\LivewireDatatables\NumberColumn;
 
 class VideosTable extends LivewireDatatable
 {
@@ -29,5 +29,4 @@ class VideosTable extends LivewireDatatable
             Column::delete()->alignRight(),
         ];
     }
-
 }

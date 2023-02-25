@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers\admin;
 
-use Illuminate\Http\Request;
-use App\Models\admin\Dashboard;
 use App\Http\Controllers\Controller;
+use App\Models\admin\Dashboard;
+use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {

@@ -2,23 +2,33 @@
 
 namespace App\Http\Livewire\Admin\Careers;
 
-use Livewire\Component;
 use App\Models\admin\Career;
+use Livewire\Component;
 
 class Edit extends Component
 {
     public $title;
+
     public $si_title;
+
     public $ta_title;
+
     public $job_description;
+
     public $si_job_description;
+
     public $ta_job_description;
+
     public $closing_date;
+
     public $company;
+
     public $is_published;
+
     public $career_id;
 
-    public function mount($career){
+    public function mount($career)
+    {
         $this->title = $career->title;
         $this->career_id = $career->id;
         $this->si_title = $career->si_title;
@@ -31,7 +41,8 @@ class Edit extends Component
         $this->is_published = $career->is_published;
     }
 
-    public function save(){
+    public function save()
+    {
         $career = Career::find($this->career_id);
         //dd($career);
         $career->title = $this->title;
@@ -45,10 +56,10 @@ class Edit extends Component
         $career->save();
 
         session()->flash('message', 'Career successfully updated.');
-
     }
 
-    public function isPublished(){
+    public function isPublished()
+    {
         $case = Career::find($this->career_id);
 
         $case->is_published = $case->is_published ? false : true;

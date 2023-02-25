@@ -4,28 +4,38 @@ namespace App\Http\Livewire\Admin\Media\PhotoGallery;
 
 use App\Models\Album;
 use App\Models\Photo;
-use Livewire\Component;
-use Intervention\Image\ImageManager;
 use Illuminate\Support\Facades\Storage;
+use Intervention\Image\ImageManager;
+use Livewire\Component;
 use Livewire\WithFileUploads;
-
 
 class EditAlbum extends Component
 {
     use WithFileUploads;
+
     public $title;
+
     public $sn_title;
+
     public $ta_title;
+
     public $company;
+
     public $thumb;
+
     public $photos;
+
     public $album_id;
+
     public $active;
+
     //database
     public $all_photos;
+
     public $thumb_cover;
 
-    public function mount($album) {
+    public function mount($album)
+    {
         $this->title = $album->title;
         $this->sn_title = $album->si_title;
         $this->ta_title = $album->ta_title;
@@ -36,26 +46,26 @@ class EditAlbum extends Component
         $this->active = $album->isPublished;
     }
 
-    public function deletePhoto($id,$file){
-        if(Storage::disk('public')->exists('photos/image-gallery/thumb/'.$file)){
-            try{
+    public function deletePhoto($id, $file)
+    {
+        if (Storage::disk('public')->exists('photos/image-gallery/thumb/'.$file)) {
+            try {
                 Storage::disk('public')->delete('photos/image-gallery/thumb/'.$file);
                 Storage::disk('public')->delete('photos/image-gallery/featured/'.$file);
                 Photo::where('id', $id)->delete();
 
                 $album = Album::find($this->album_id);
                 $this->mount($album);
-            }
-            catch(\Exception $e){
+            } catch(\Exception $e) {
                 dd($e);
             }
-
-        }else{
+        } else {
             dd('File does not exists.');
         }
     }
 
-    public function isPublished(){
+    public function isPublished()
+    {
         $case = Album::find($this->album_id);
 
         $case->isPublished = $case->isPublished ? false : true;
@@ -72,13 +82,13 @@ class EditAlbum extends Component
             'company' => 'required',
         ]);
         $album = Album::find($this->album_id);
-            $album->title = $this->title;
-            $album->si_title = $this->sn_title;
-            $album->ta_title = $this->ta_title;
-            $album->company = $this->company;
-            $album->save();
+        $album->title = $this->title;
+        $album->si_title = $this->sn_title;
+        $album->ta_title = $this->ta_title;
+        $album->company = $this->company;
+        $album->save();
 
-        if(!empty($this->thumb)){
+        if (! empty($this->thumb)) {
             Storage::disk('public')->delete('photos/image-gallery/thumb/'.$album->thumb);
             $thumbHashName = $this->thumb->hashName();
             $album->thumb = $thumbHashName;
@@ -87,26 +97,26 @@ class EditAlbum extends Component
             $this->thumb->store('public/photos/image-gallery/thumb');
         }
 
-        if(!empty($this->photos)){
-            $path=  storage_path().'/app/public/photos/image-gallery/thumb/';
+        if (! empty($this->photos)) {
+            $path = storage_path().'/app/public/photos/image-gallery/thumb/';
             $manager = new ImageManager();
             foreach ($this->photos as $photo) {
                 $imageHashName = $photo->hashName();
                 $photo->store('public/photos/image-gallery/featured');
-                $image = $manager->make(storage_path().'/app/public/photos/image-gallery/featured/'.$imageHashName)->resize(330,225);
+                $image = $manager->make(storage_path().'/app/public/photos/image-gallery/featured/'.$imageHashName)->resize(330, 225);
                 $image->save($path.'/'.$imageHashName);
                 Photo::create([
                     'album_id' => $album->id,
-                    'file_name' => $imageHashName
+                    'file_name' => $imageHashName,
                 ]);
             }
-         }
+        }
 
-         session()->flash('message', 'Album successfully Updated.');
+        session()->flash('message', 'Album successfully Updated.');
 
         return redirect()->route('photo-gallery.index');
-
     }
+
     public function render()
     {
         return view('livewire.admin.media.photo-gallery.edit-album');

@@ -9,7 +9,8 @@ class LatestNews extends Component
 {
     public $news;
 
-    public function mount(){
+    public function mount()
+    {
         $this->news = News::latest()->get()->take(3);
     }
 

@@ -58,8 +58,8 @@ class PressReleaseController extends Controller
     public function edit($id)
     {
         $press = PressRelease::find($id);
-        return view('admin.press.edit-press', compact('press'));
 
+        return view('admin.press.edit-press', compact('press'));
     }
 
     /**

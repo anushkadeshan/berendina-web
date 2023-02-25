@@ -197,7 +197,7 @@
                         </ul>
                     </li>
                     <li class="{{$footprints ? 'active': ''}}" style="margin-bottom: 10px; background-color:#4f93ce">
-                        <a style="font-size: 16px; color:#fff" href="" wire:click.prevent="loadFootprints">Our Footprints</a>
+                        <a style="font-size: 16px; color:#fff" href="" wire:click.prevent="loadFootprints">Our Presence</a>
                     </li>
                     <li class="{{$partners ? 'active': ''}}" style="margin-bottom: 10px; background-color:#4f93ce">
                         <a style="font-size: 16px; color:#fff" href="" wire:click.prevent="loadPartners">Our Partners and Memberships</a>

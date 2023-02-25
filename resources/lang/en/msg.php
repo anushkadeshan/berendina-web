@@ -114,7 +114,7 @@ return [
     '1997' => 'Berendina Foundation was established',
     '2005' => 'Berendina Development Services (Gte)
     Ltd (BDS) was established with the
-    registation under the Company
+    registration under the Company
      Act No. 17 of 1982',
     '2007-1' => 'Berendina Development Services (Gte) Ltd., was
      re-registered under the company Act No. 07 of 2007.',
@@ -132,10 +132,7 @@ return [
      Organisation under Voluntary Social
      Services Organisation Act No. 31 of 1980
      as amended by Act No. 08 of 1998',
-    '2017' => 'Berendina Development Services (Gte) Ltd (BDS)
-     shifted to a project approach incorporating logframes.',
-    '2019' => 'Successfully completed a three-year strategy',
-    '2021' => 'Began undertaking COVID-19 humanitarian and relief work',
+    '2020' => 'Amalgamation of Berendina Employment Center (Gte) Ltd into Berendina Development Services (Gte) Ltd',
     //MEAL
     'Monitoring, Evaluation, Accountability and Learning' => 'Monitoring, Evaluation, Accountability and Learning',
     'meal1' => 'Monitoring and evaluation (M&E) will function as the backbone of BDS programs. It will serve to ensure
@@ -143,19 +140,19 @@ return [
                 contributions to outcomes and impacts. Going further, the M&E moniker has been augmented to include
                 accountability and learning under the new strategy. Hence the terminology will be changed as Monitoring,
                 Evaluation, Accountability and Learning (MEAL).',
-    'meal2' =>  'Day-to-day monitoring exercises through the desk and field-based monitoring during programme interventions will
+    'meal2' => 'Day-to-day monitoring exercises through the desk and field-based monitoring during programme interventions will
                 provide regular insights into the timely accomplishment of interventions, stakeholders’ performance and work
                 quality, and help timely and informed decision-making. Routine monitoring findings will be discussed among
                 regional programme staff once in every month in order to facilitate decision making process.',
     'meal3' => 'Periodic outcome measuring and mid-term evaluation are supposed to help make necessary adjustments to adaptive
                 programming based on evaluation findings, stakeholder suggestions, lessons learnt, and changes in development
                 contexts and needs.',
-    'meal4' =>  'Accountability will be a core value of the programme and is essential to ensure at all levels, including
+    'meal4' => 'Accountability will be a core value of the programme and is essential to ensure at all levels, including
                 management, staff, beneficiaries, and other relevant stakeholders. Accountability mechanisms will include
                 complaint-handling mechanisms and feedback practices, which will provide updates to management, beneficiaries,
                 and other key stakeholders to help make informed management decisions and necessary course corrections, thereby
                 contributing to future programming.',
-    'meal5' =>  'Each component of the MEAL contributes to learning. It is built upon all other components and provides
+    'meal5' => 'Each component of the MEAL contributes to learning. It is built upon all other components and provides
                 high-level information/knowledge regarding overall programme improvements, future design, and strategy changes.',
     'meal6' => 'A comprehensive illustration of MEAL framework is provided in the BDS new strategy document.',
 
@@ -256,7 +253,7 @@ return [
         the school attending age do not receive any education whatsoever. It cannot be figured out what the exact
         numbers of people with disabilities today. But this helps generate some understanding of the people living with
         disabilities.',
-    'disability2' =>  'The majority of the people with disabilities are poor. Poverty is a consequence of disability since people with
+    'disability2' => 'The majority of the people with disabilities are poor. Poverty is a consequence of disability since people with
         disabilities often lack access to education, health services and income-generating activities. They are often
         denied their human, social and economic rights which contribute to high levels of vulnerability and exclusion.
         People with disabilities have the right to work. This has been enshrined in several national Acts and
@@ -288,7 +285,7 @@ which the Garagoda Development Project was started and the first office of Beren
 established. In 1997, Berendina Stichting signed an MOU with the Ministry of Policy Planning of the
 Government of Sri Lanka and became a recognized International NGO working in Sri Lanka.',
 
-'about us 4' => 'In 2005, the formation of Sri Lankan organisations commenced. Berendina
+    'about us 4' => 'In 2005, the formation of Sri Lankan organisations commenced. Berendina
 Development Services (Guarantee) Limited, well known as BDS, was established in 2005. In 2007, Berendina
 Microfinance Institute (Guarantee) Limited. (BMI), was formed. Berendina Micro Investments Company
 Limited (BMIC) was formed in 2014, to support the expansion of the microfinance work of BMI and all
@@ -298,57 +295,34 @@ Development Services (Guarantee) Limited under the new strategic plan. In 2019, 
 Investments Company Ltd (BMIC) became the first Micro Finance institution to receive the license from
 the Central Bank of Sri Lanka.',
 
-'Closing Date' => 'Closing Date',
-'Click to Apply' => 'Click to Apply',
-'Fill required fields and apply job' => 'Fill required fields and apply job',
-'Apply' => 'Apply',
-'Full Name' => 'Full Name',
-'Sex' => 'Sex',
-'Email' => 'Email',
-'Message' => 'Message',
-'C/V Upload' => 'C/V Upload',
-'Maximum upload file size: 12 MB' => 'Maximum upload file size: 12 MB',
-'Job Application successfully recived.' => 'Job Application successfully recived.',
+    'Closing Date' => 'Closing Date',
+    'Click to Apply' => 'Click to Apply',
+    'Fill required fields and apply job' => 'Fill required fields and apply job',
+    'Apply' => 'Apply',
+    'Full Name' => 'Full Name',
+    'Sex' => 'Sex',
+    'Email' => 'Email',
+    'Message' => 'Message',
+    'C/V Upload' => 'C/V Upload',
+    'Maximum upload file size: 12 MB' => 'Maximum upload file size: 12 MB',
+    'Job Application successfully recived.' => 'Job Application successfully recived.',
 
-'Interested in discussing?' => 'Interested in discussing?',
-'Your Messeage sent successfully' => 'Your Messeage sent successfully',
-'Quick Contact' => 'Quick Contact',
-'Useful Links' => 'Useful Links',
-'Latest News' => 'Latest News',
+    'Interested in discussing?' => 'Interested in discussing?',
+    'Your Messeage sent successfully' => 'Your Messeage sent successfully',
+    'Quick Contact' => 'Quick Contact',
+    'Useful Links' => 'Useful Links',
+    'Latest News' => 'Latest News',
 
-'Disaster Relief Activities on COVID-19 Pandemic' => 'Disaster Relief Activities on COVID-19 Pandemic',
-'background' => 'Background',
-'Strategic cross cutting themes' => 'Strategic cross cutting themes',
-'Gender Equality and Women Empowerment' => 'Gender Equality and Women Empowerment',
-'Environment Sustainability' => 'Environment Sustainability',
-'Inclusion of persons with disabilities' => 'Inclusion of persons with disabilities',
+    'Disaster Relief Activities on COVID-19 Pandemic' => 'Disaster Relief Activities on COVID-19 Pandemic',
+    'background' => 'Background',
+    'Strategic cross cutting themes' => 'Strategic cross cutting themes',
+    'Gender Equality and Women Empowerment' => 'Gender Equality and Women Empowerment',
+    'Environment Sustainability' => 'Environment Sustainability',
+    'Inclusion of persons with disabilities' => 'Inclusion of persons with disabilities',
 
-//cross cutting themes
-'BDS ensures that the all-development initiatives taken by the organization would address increased participation of women and inclusive decision making. Capacity of the women at the household is assed with more attention to include them into the possible economic development initiatives as well. BDS puts its utmost effort to maintain the gender balance in the staff and builds the capacity of the staff in terms of gender and development to improve their understanding on the concept and make sure it is reflected in all the initiatives.' => 'BDS ensures that the all-development initiatives taken by the organization would address increased participation of women and inclusive decision making. Capacity of the women at the household is assed with more attention to include them into the possible economic development initiatives as well. BDS puts its utmost effort to maintain the gender balance in the staff and builds the capacity of the staff in terms of gender and development to improve their understanding on the concept and make sure it is reflected in all the initiatives.',
-'All BDS activities are environment sensitive and focused at sustainability of it. BDS does not support the activities that harm the environment. Especially during the construction process BDS obtains environment report from the relevant authorities to be more vigilant on that aspect. Environmental aspects are taken into account in any agriculture work undertaken with private sector partnership as well.' => 'All BDS activities are environment sensitive and focused at sustainability of it. BDS does not support the activities that harm the environment. Especially during the construction process BDS obtains environment report from the relevant authorities to be more vigilant on that aspect. Environmental aspects are taken into account in any agriculture work undertaken with private sector partnership as well.',
-'According to the population and housing information of 2012 there are 1,617,924 impaired persons in the total population who have either a mental or a physical impairment out of which 695,263 are males and 922,661 are females. The majority of the people with disabilities are poor. Poverty is a consequence of disability since people with disabilities often lack access to education, health services and income-generating activities. They are often denied their human, social and economic rights which contribute to high levels of vulnerability and exclusion. People with disabilities have the right to work. This has been enshrined in several national Acts and international Conventions ratified by the government of Sri Lanka, but policy implementation measures are still inadequate to enable them to exercise that right. BDS ensures that the all development initiatives taken by the organization would provide reasonable space for the participation of persons with disabilities.' => 'According to the population and housing information of 2012 there are 1,617,924 impaired persons in the total population who have either a mental or a physical impairment out of which 695,263 are males and 922,661 are females. The majority of the people with disabilities are poor. Poverty is a consequence of disability since people with disabilities often lack access to education, health services and income-generating activities. They are often denied their human, social and economic rights which contribute to high levels of vulnerability and exclusion. People with disabilities have the right to work. This has been enshrined in several national Acts and international Conventions ratified by the government of Sri Lanka, but policy implementation measures are still inadequate to enable them to exercise that right. BDS ensures that the all development initiatives taken by the organization would provide reasonable space for the participation of persons with disabilities.',
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    //cross cutting themes
+    'BDS ensures that the all-development initiatives taken by the organization would address increased participation of women and inclusive decision making. Capacity of the women at the household is assed with more attention to include them into the possible economic development initiatives as well. BDS puts its utmost effort to maintain the gender balance in the staff and builds the capacity of the staff in terms of gender and development to improve their understanding on the concept and make sure it is reflected in all the initiatives.' => 'BDS ensures that the all-development initiatives taken by the organization would address increased participation of women and inclusive decision making. Capacity of the women at the household is assed with more attention to include them into the possible economic development initiatives as well. BDS puts its utmost effort to maintain the gender balance in the staff and builds the capacity of the staff in terms of gender and development to improve their understanding on the concept and make sure it is reflected in all the initiatives.',
+    'All BDS activities are environment sensitive and focused at sustainability of it. BDS does not support the activities that harm the environment. Especially during the construction process BDS obtains environment report from the relevant authorities to be more vigilant on that aspect. Environmental aspects are taken into account in any agriculture work undertaken with private sector partnership as well.' => 'All BDS activities are environment sensitive and focused at sustainability of it. BDS does not support the activities that harm the environment. Especially during the construction process BDS obtains environment report from the relevant authorities to be more vigilant on that aspect. Environmental aspects are taken into account in any agriculture work undertaken with private sector partnership as well.',
+    'According to the population and housing information of 2012 there are 1,617,924 impaired persons in the total population who have either a mental or a physical impairment out of which 695,263 are males and 922,661 are females. The majority of the people with disabilities are poor. Poverty is a consequence of disability since people with disabilities often lack access to education, health services and income-generating activities. They are often denied their human, social and economic rights which contribute to high levels of vulnerability and exclusion. People with disabilities have the right to work. This has been enshrined in several national Acts and international Conventions ratified by the government of Sri Lanka, but policy implementation measures are still inadequate to enable them to exercise that right. BDS ensures that the all development initiatives taken by the organization would provide reasonable space for the participation of persons with disabilities.' => 'According to the population and housing information of 2012 there are 1,617,924 impaired persons in the total population who have either a mental or a physical impairment out of which 695,263 are males and 922,661 are females. The majority of the people with disabilities are poor. Poverty is a consequence of disability since people with disabilities often lack access to education, health services and income-generating activities. They are often denied their human, social and economic rights which contribute to high levels of vulnerability and exclusion. People with disabilities have the right to work. This has been enshrined in several national Acts and international Conventions ratified by the government of Sri Lanka, but policy implementation measures are still inadequate to enable them to exercise that right. BDS ensures that the all development initiatives taken by the organization would provide reasonable space for the participation of persons with disabilities.',
 
 ];

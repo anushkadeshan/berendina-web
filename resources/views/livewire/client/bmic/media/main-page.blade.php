@@ -172,19 +172,16 @@
     <!-- Sidebar  -->
     <nav id="sidebar">
         <ul class="list-unstyled components">
+            {{--
             <li class="{{$case_studies ? 'active': ''}}" style="margin-bottom: 10px; background-color:#4f93ce">
                 <a style="font-size: 16px; color:#fff" href="" wire:click.prevent="loadCaseStudies">Case Studies</a>
             </li>
-            <li style="margin-bottom: 10px;background-color:#4f93ce">
-                <a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"style=" color:#fff">Gallery</a>
-                <ul class="collapse {{$photos || $videos ? 'show': ''}} list-unstyled" id="pageSubmenu2">
-                    <li class="{{$photos ? 'active': ''}}" style="margin-bottom: 10px; background-color:#4f93ce">
-                        <a style="font-size: 16px; color:#fff" href="" wire:click.prevent="loadPhotos">Photos</a>
-                    </li>
-                    <li class="{{$videos ? 'active': ''}}" style="margin-bottom: 10px; background-color:#4f93ce">
-                        <a style="font-size: 16px; color:#fff" href="" wire:click.prevent="loadVideos">Vidoes</a>
-                    </li>
-                </ul>
+            --}}
+            <li class="{{$photos ? 'active': ''}}" style="margin-bottom: 10px; background-color:#4f93ce">
+                <a style="font-size: 16px; color:#fff" href="" wire:click.prevent="loadPhotos">Photos</a>
+            </li>
+            <li class="{{$videos ? 'active': ''}}" style="margin-bottom: 10px; background-color:#4f93ce">
+                <a style="font-size: 16px; color:#fff" href="" wire:click.prevent="loadVideos">Vidoes</a>
             </li>
 
         </ul>

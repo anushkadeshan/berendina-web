@@ -7,15 +7,23 @@ use Livewire\Component;
 class WhoWeAre extends Component
 {
     public $about_us = true;
+
     public $history = false;
+
     public $doners = false;
+
     public $board = false;
+
     public $management = false;
+
     public $org = false;
+
     public $partners = false;
+
     public $financial = false;
 
-    public function loadAboutUs(){
+    public function loadAboutUs()
+    {
         $this->about_us = true;
         $this->history = false;
         $this->doners = false;
@@ -26,7 +34,8 @@ class WhoWeAre extends Component
         $this->financial = false;
     }
 
-    public function loadHistory(){
+    public function loadHistory()
+    {
         $this->about_us = false;
         $this->history = true;
         $this->doners = false;
@@ -37,7 +46,8 @@ class WhoWeAre extends Component
         $this->financial = false;
     }
 
-    public function loadDonors(){
+    public function loadDonors()
+    {
         $this->about_us = false;
         $this->history = false;
         $this->doners = true;
@@ -48,7 +58,8 @@ class WhoWeAre extends Component
         $this->financial = false;
     }
 
-    public function loadBoard(){
+    public function loadBoard()
+    {
         $this->about_us = false;
         $this->history = false;
         $this->doners = false;
@@ -59,7 +70,8 @@ class WhoWeAre extends Component
         $this->financial = false;
     }
 
-    public function loadManagement(){
+    public function loadManagement()
+    {
         $this->about_us = false;
         $this->history = false;
         $this->doners = false;
@@ -70,7 +82,8 @@ class WhoWeAre extends Component
         $this->financial = false;
     }
 
-    public function loadOrg(){
+    public function loadOrg()
+    {
         $this->about_us = false;
         $this->history = false;
         $this->doners = false;
@@ -81,7 +94,8 @@ class WhoWeAre extends Component
         $this->financial = false;
     }
 
-    public function loadPartners(){
+    public function loadPartners()
+    {
         $this->about_us = false;
         $this->history = false;
         $this->doners = false;
@@ -92,7 +106,8 @@ class WhoWeAre extends Component
         $this->financial = false;
     }
 
-    public function loadFinancial(){
+    public function loadFinancial()
+    {
         $this->about_us = false;
         $this->history = false;
         $this->doners = false;

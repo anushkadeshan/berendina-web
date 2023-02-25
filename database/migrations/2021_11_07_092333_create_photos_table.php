@@ -15,10 +15,10 @@ class CreatePhotosTable extends Migration
     {
         Schema::create('photos', function (Blueprint $table) {
             $table->id();
-            $table->string('title',500)->nullable();
-            $table->string('si_title',500)->nullable();
-            $table->string('ta_title',500)->nullable();
-            $table->string('thumb',500)->nullable();
+            $table->string('title', 500)->nullable();
+            $table->string('si_title', 500)->nullable();
+            $table->string('ta_title', 500)->nullable();
+            $table->string('thumb', 500)->nullable();
             $table->string('company')->nullable();
             $table->integer('added_by')->nullable();
             $table->boolean('isPublished')->nullable();

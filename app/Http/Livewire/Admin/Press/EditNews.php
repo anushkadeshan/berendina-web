@@ -2,31 +2,43 @@
 
 namespace App\Http\Livewire\Admin\Press;
 
+use App\Models\admin\NewsCategory;
 use App\Models\News;
+use Intervention\Image\ImageManager;
 use Livewire\Component;
 use Livewire\WithFileUploads;
-use App\Models\admin\NewsCategory;
-use Intervention\Image\ImageManager;
 
 class EditNews extends Component
 {
     use WithFileUploads;
+
     public $news_categories;
 
     public $news_id;
+
     public $title;
+
     public $sn_title;
+
     public $ta_title;
+
     public $description;
+
     public $si_description;
+
     public $ta_description;
+
     public $categories = [];
+
     public $photo;
+
     public $image;
+
     public $published;
 
-    public function mount($id){
-        if($id){
+    public function mount($id)
+    {
+        if ($id) {
             $news = News::find($id);
             $this->news_id = $news->id;
             $this->title = $news->title;
@@ -56,15 +68,15 @@ class EditNews extends Component
             'categories' => 'required',
         ]);
 
-        if(!empty($this->photo)){
+        if (! empty($this->photo)) {
             $imageHashName = $this->photo->hashName();
             $i = $this->photo->store('public/photos/news/featured');
             $path1 = storage_path().'/app/public/photos/news/thumb_medium/';
             $path2 = storage_path().'/app/public/photos/news/thumb_small/';
 
             $manager = new ImageManager();
-            $image = $manager->make(storage_path().'/app/public/photos/news/featured/'.$imageHashName)->resize(80,55);
-            $image2 = $manager->make(storage_path().'/app/public/photos/news/featured/'.$imageHashName)->resize(330,225);
+            $image = $manager->make(storage_path().'/app/public/photos/news/featured/'.$imageHashName)->resize(80, 55);
+            $image2 = $manager->make(storage_path().'/app/public/photos/news/featured/'.$imageHashName)->resize(330, 225);
 
             $image2->save($path1.'/'.$imageHashName);
             $image->save($path2.'/'.$imageHashName);
@@ -78,7 +90,7 @@ class EditNews extends Component
         $news->si_description = $this->si_description;
         $news->ta_description = $this->ta_description;
         $news->categories = json_encode($this->categories);
-        if(!empty($this->photo)){
+        if (! empty($this->photo)) {
             $news->image = $imageHashName;
         }
         $news->added_by = auth()->user()->id;
@@ -86,19 +98,18 @@ class EditNews extends Component
 
         session()->flash('message', 'News successfully updated.');
 
-         $this->title = '';
-         $this->sn_title = '';
-         $this->ta_title = '';
-         $this->description = '';
-         $this->si_description = '';
-         $this->ta_description = '';
-         $this->categories = [];
-         $this->photo = '';
-
-
+        $this->title = '';
+        $this->sn_title = '';
+        $this->ta_title = '';
+        $this->description = '';
+        $this->si_description = '';
+        $this->ta_description = '';
+        $this->categories = [];
+        $this->photo = '';
     }
 
-    public function isPublished(){
+    public function isPublished()
+    {
         $case = News::find($this->news_id);
         //dd($case);
         $case->published = $case->published ? false : true;

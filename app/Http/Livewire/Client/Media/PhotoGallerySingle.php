@@ -8,7 +8,8 @@ class PhotoGallerySingle extends Component
 {
     public $photos = [];
 
-    public function mount($photos){
+    public function mount($photos)
+    {
         $this->photos = $photos;
     }
 

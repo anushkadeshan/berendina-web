@@ -5,8 +5,6 @@ namespace App\Mail;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
-use Illuminate\Support\Facades\Storage;
-use Illuminate\Contracts\Queue\ShouldQueue;
 
 class SendCV extends Mailable
 {
@@ -30,6 +28,7 @@ class SendCV extends Mailable
     public function build()
     {
         $path = storage_path();
+
         return $this->subject('CV recieved for position of '.$this->data->career->title)
         ->markdown('emails.cv')
         ->withData($this->data)

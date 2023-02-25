@@ -20,7 +20,16 @@
                      		<p class="lan-2"></p>
 						</div>
 					</li>
-					<li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav {{ Route::currentRouteName() == 'knowledgebase' ? 'active' : ''}}" href="{{ route('index') }}"><i class="icofont icofont-home"></i> </i><span> Home Page</span></a></li>
+					<li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav {{ Route::currentRouteName() == 'knowledgebase' ? 'active' : ''}}" href="{{ route('index') }}"><i class="icofont icofont-home"></i> </i><span> Dashboard</span></a></li>
+					<li class="sidebar-list">
+						<a class="sidebar-link sidebar-title {{request()->route()->getPrefix() == 'admin/home' ? 'active' : '' }}" href="#"><i class="icofont icofont-paper"></i></i><span> Home Page</span>
+							<div class="according-menu"><i class="fa fa-angle-{{request()->route()->getPrefix() == 'admin/home' ? 'down' : 'right' }}"></i></div>
+						</a>
+						<ul class="sidebar-submenu" style="display: {{request()->route()->getPrefix() == 'admin/home' ? 'block' : 'none;' }};">
+							<li><a href="{{route('slider')}}" class="{{ Route::currentRouteName()=='slider' ? 'active' : '' }}">Main Slider</a></li>
+							<li><a href="{{route('figurecounter')}}" class="{{ Route::currentRouteName()=='figurecounter' ? 'active' : '' }}">Figure Counter</a></li>
+						</ul>
+					</li>
 					<li class="sidebar-list">
 						<a class="sidebar-link sidebar-title {{request()->route()->getPrefix() == 'admin/press' ? 'active' : '' }}" href="#"><i class="icofont icofont-paper"></i></i><span> Press</span>
 							<div class="according-menu"><i class="fa fa-angle-{{request()->route()->getPrefix() == 'press' ? 'down' : 'right' }}"></i></div>
@@ -45,6 +54,7 @@
                     <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav {{ Route::currentRouteName() == 'annual-reports.index' ? 'active' : ''}}" href="{{ route('annual-reports.index') }}"><i class="icofont icofont-book-alt"></i></i><span> Annual Reports</span></a></li>
                     <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav {{ Route::currentRouteName() == 'careers' ? 'active' : ''}}" href="{{ route('careers') }}"><i class="icofont icofont-briefcase-alt-1"></i><span> Careers</span></a></li>
                     <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav {{ Route::currentRouteName() == 'management.index' ? 'active' : ''}}" href="{{ route('management.index') }}"><i class="icofont icofont-user"></i><span> Management</span></a></li>
+                    <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav {{ Route::currentRouteName() == 'contacts.index' ? 'active' : ''}}" href="{{ route('contacts.index') }}"><i class="icofont icofont-user"></i><span> Contacts</span></a></li>
 				</ul>
 			</div>
 			<div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>

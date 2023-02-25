@@ -15,12 +15,12 @@ class CreateManagementTable extends Migration
     {
         Schema::create('management', function (Blueprint $table) {
             $table->id();
-            $table->string('name',255);
-            $table->string('display_name',255);
-            $table->string('designation',255);
+            $table->string('name', 255);
+            $table->string('display_name', 255);
+            $table->string('designation', 255);
             $table->text('profile');
-            $table->string('photo',255);
-            $table->string('company',255);
+            $table->string('photo', 255);
+            $table->string('company', 255);
             $table->boolean('is_published');
             $table->timestamps();
         });

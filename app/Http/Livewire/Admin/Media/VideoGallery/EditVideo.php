@@ -8,14 +8,21 @@ use Livewire\Component;
 class EditVideo extends Component
 {
     public $description;
+
     public $si_description;
+
     public $ta_description;
+
     public $link;
+
     public $company;
+
     public $video_id;
+
     public $active;
 
-    public function mount($video){
+    public function mount($video)
+    {
         $this->description = $video->description;
         $this->si_description = $video->si_description;
         $this->ta_description = $video->ta_description;
@@ -25,7 +32,8 @@ class EditVideo extends Component
         $this->active = $video->published;
     }
 
-    public function save(){
+    public function save()
+    {
         $this->validate([ // 1MB Max
             'description' => 'required',
             'si_description' => 'required',
@@ -44,10 +52,11 @@ class EditVideo extends Component
 
         session()->flash('message', 'Video successfully updated.');
 
-       // return redirect()->route('videos.index');
+        // return redirect()->route('videos.index');
     }
 
-    public function isPublished(){
+    public function isPublished()
+    {
         $case = Video::find($this->video_id);
 
         $case->published = $case->published ? false : true;

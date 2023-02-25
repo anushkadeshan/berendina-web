@@ -12,16 +12,16 @@ class Album extends Model
     protected $table = 'photos';
 
     public $fillable = [
-        'title', 'si_title', 'ta_title', 'thumb', 'company', 'added_by', 'isPublished'
-     ];
+        'title', 'si_title', 'ta_title', 'thumb', 'company', 'added_by', 'isPublished',
+    ];
 
-     /**
-      * Get all of the comments for the Photo
-      *
-      * @return \Illuminate\Database\Eloquent\Relations\HasMany
-      */
-     public function photos()
-     {
-         return $this->hasMany(Photo::class, 'album_id');
-     }
+    /**
+     * Get all of the comments for the Photo
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function photos()
+    {
+        return $this->hasMany(Photo::class, 'album_id');
+    }
 }

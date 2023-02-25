@@ -8,5 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class AnnualReport extends Model
 {
     use HasFactory;
-    public $fillable = ['title','thumb_url','file_url','added_by','isPublished','company','year'];
+
+    public $fillable = ['title', 'thumb_url', 'file_url', 'added_by', 'isPublished', 'company', 'year'];
 }

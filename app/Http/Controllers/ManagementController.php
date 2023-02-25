@@ -35,8 +35,6 @@ class ManagementController extends Controller
      */
     public function store(Request $request)
     {
-       
-        
     }
 
     /**
@@ -59,7 +57,8 @@ class ManagementController extends Controller
     public function edit(Management $management)
     {
         $profile = $management;
-        return view('admin.management.edit',compact('profile'));
+
+        return view('admin.management.edit', compact('profile'));
     }
 
     /**

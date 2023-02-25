@@ -29,4 +29,6 @@
     </div>
     <br>
     <livewire:client.home.footer />
+    <script src="https://cdn.tailwindcss.com"></script>
 @endsection
+

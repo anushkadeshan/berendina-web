@@ -19,7 +19,7 @@ return [
     'trainings' => 'trainings',
     'scholarships' => 'scholarships',
     'Where we work' => 'Where we work',
-    'home' =>'Home',
+    'home' => 'Home',
     'Latest' => 'Latest',
     'News' => 'News',
     'Berendina in the' => 'Berendina in the',
@@ -113,40 +113,40 @@ return [
     '1992' => 'பெரெண்டினா ஸ்டிச்டிங்கினால் நியமிக்கப்பட்ட மூன்று ஆலோசகர்களால் கரகொட அபிவிருத்தி திட்டம் இலங்கையில் ஆரம்பிக்கப்பட்டது.',
     '1997' => 'பெரெண்டினா அறக்கட்டளை நிறுவப்பட்டது.',
     '2005' => ' வரையறுக்கப்பட்ட பெரெண்டினா அபிவிருத்திச் சேவைகள் (உத்தரவாதம் அளிக்கப்பட்ட) நிறுவனம் (BDS) 1982 ஆம் ஆண்டின் 17 ஆம் இலக்க கம்பெனி சட்டத்தின் கீழ் பதிவு செய்து நிறுவப்பட்டது.',
-     '2007-1' => 'Berendina Development Services (Gte) Ltd., was
+    '2007-1' => 'Berendina Development Services (Gte) Ltd., was
      re-registered under the company Act No. 07 of 2007.',
-     '2007-2' => 'Berendina Microfinance Institute (Gte) Ltd (BMI)
+    '2007-2' => 'Berendina Microfinance Institute (Gte) Ltd (BMI)
      was established',
-     '2014' => 'Berendina Micro Investments
+    '2014' => 'Berendina Micro Investments
      Company Ltd (BMIC) was
      established as a subsidiary
      company of Berendina
      Development Services (Gte) Ltd',
-     '2015' => 'இளைஞர் ஆதரவு திட்டம் பெரெண்டினா அபிவிருத்திச் சேவைகள் (உத்தரவாதம் அளிக்கப்பட்ட) நிறுவனத்திடமிருந்து பிரிக்கப்பட்டு, அதற்கான தனி நிறுவனமாக வரையறுக்கப்பட்ட பெரெண்டினா வேலைவாய்ப்பு மையம் (உத்தரவாதம் அளிக்கப்பட்ட) நிறுவனம் நிறுவப்பட்டது.',
-     '2016' => 'அரசு சாரா அமைப்பாக, 1980 ஆண்டின் 31 இலக்க தன்னார்வ சமூக சேவைகள் அமைப்பு சட்டத்தின் மீள் திருத்தியமைக்கப்பட்ட 1998 ஆண்டின் 08 இலக்க சட்டத்தின் கீழ் பதிவு செய்யப்பட்டது.',
-     '2017' => 'பெரெண்டினா அபிவிருத்திச் சேவைகள் (உத்தரவாதம் அளிக்கப்பட்ட) நிறுவன செயற்பாட்டு திட்டங்கள் பதிவு சட்டக அணுகுமுறைக்கு மாற்றப்பட்டது.',
-     '2019' => 'மூன்று வருட மூலோபாயம் வெற்றிகரமாக முடிக்கப்பட்டது.',
-     '2021' => 'COVID-19 தொடர்பான மனிதாபிமான மற்றும் நிவாரணப் பணிகளின் செயற்பாடுகள் ஆரம்பம்.',
-        //MEAL
-     'Monitoring, Evaluation, Accountability and Learning' => 'Monitoring, Evaluation, Accountability and Learning',
-     'meal1' => 'Monitoring and evaluation (M&E) will function as the backbone of BDS programs. It will serve to ensure
+    '2015' => 'இளைஞர் ஆதரவு திட்டம் பெரெண்டினா அபிவிருத்திச் சேவைகள் (உத்தரவாதம் அளிக்கப்பட்ட) நிறுவனத்திடமிருந்து பிரிக்கப்பட்டு, அதற்கான தனி நிறுவனமாக வரையறுக்கப்பட்ட பெரெண்டினா வேலைவாய்ப்பு மையம் (உத்தரவாதம் அளிக்கப்பட்ட) நிறுவனம் நிறுவப்பட்டது.',
+    '2016' => 'அரசு சாரா அமைப்பாக, 1980 ஆண்டின் 31 இலக்க தன்னார்வ சமூக சேவைகள் அமைப்பு சட்டத்தின் மீள் திருத்தியமைக்கப்பட்ட 1998 ஆண்டின் 08 இலக்க சட்டத்தின் கீழ் பதிவு செய்யப்பட்டது.',
+    '2017' => 'பெரெண்டினா அபிவிருத்திச் சேவைகள் (உத்தரவாதம் அளிக்கப்பட்ட) நிறுவன செயற்பாட்டு திட்டங்கள் பதிவு சட்டக அணுகுமுறைக்கு மாற்றப்பட்டது.',
+    '2019' => 'மூன்று வருட மூலோபாயம் வெற்றிகரமாக முடிக்கப்பட்டது.',
+    '2021' => 'COVID-19 தொடர்பான மனிதாபிமான மற்றும் நிவாரணப் பணிகளின் செயற்பாடுகள் ஆரம்பம்.',
+    //MEAL
+    'Monitoring, Evaluation, Accountability and Learning' => 'Monitoring, Evaluation, Accountability and Learning',
+    'meal1' => 'Monitoring and evaluation (M&E) will function as the backbone of BDS programs. It will serve to ensure
                 high-quality implementation, provide timely information for informed management decisions, and measure
                 contributions to outcomes and impacts. Going further, the M&E moniker has been augmented to include
                 accountability and learning under the new strategy. Hence the terminology will be changed as Monitoring,
                 Evaluation, Accountability and Learning (MEAL).',
-    'meal2' =>  'Day-to-day monitoring exercises through the desk and field-based monitoring during programme interventions will
+    'meal2' => 'Day-to-day monitoring exercises through the desk and field-based monitoring during programme interventions will
                 provide regular insights into the timely accomplishment of interventions, stakeholders’ performance and work
                 quality, and help timely and informed decision-making. Routine monitoring findings will be discussed among
                 regional programme staff once in every month in order to facilitate decision making process.',
     'meal3' => 'Periodic outcome measuring and mid-term evaluation are supposed to help make necessary adjustments to adaptive
                 programming based on evaluation findings, stakeholder suggestions, lessons learnt, and changes in development
                 contexts and needs.',
-    'meal4' =>  'Accountability will be a core value of the programme and is essential to ensure at all levels, including
+    'meal4' => 'Accountability will be a core value of the programme and is essential to ensure at all levels, including
                 management, staff, beneficiaries, and other relevant stakeholders. Accountability mechanisms will include
                 complaint-handling mechanisms and feedback practices, which will provide updates to management, beneficiaries,
                 and other key stakeholders to help make informed management decisions and necessary course corrections, thereby
                 contributing to future programming.',
-    'meal5' =>  'Each component of the MEAL contributes to learning. It is built upon all other components and provides
+    'meal5' => 'Each component of the MEAL contributes to learning. It is built upon all other components and provides
                 high-level information/knowledge regarding overall programme improvements, future design, and strategy changes.',
     'meal6' => 'A comprehensive illustration of MEAL framework is provided in the BDS new strategy document.',
 
@@ -199,9 +199,9 @@ return [
                 the family together (CARE study 2015), Sexual harassment at workplace is covered under law but incidents are
                 under reported.',
     'gender7' => 'In response to the above gender discriminatory status, BDS will give due attention to addressing gender gaps in
-                the strategic areas under the three components.' ,
+                the strategic areas under the three components.',
 
-                //Environment Sustainability<
+    //Environment Sustainability<
     'Environment Sustainability' => 'Environment Sustainability',
     'env1' => 'Deforestation has proved to be the most detrimental for Sri Lanka because of the large number of forests that
                 had been eliminated for more plantations and agricultural land. Sri Lanka is a big and major producer of tea,
@@ -236,7 +236,7 @@ return [
             component and steps have to be taken to minimize environmental issues and sustain the bio diversity. Disaster
             management has to be a key area in the five years strategy of BDS.',
 
-            //Disability
+    //Disability
     'Disability Inclusion' => 'Disability Inclusion',
     'disability1' => 'According to the population and housing information of 2012 there are 1,617,924 impaired persons in the total
         population who have either a mental or a physical impairment out of which 695,263 are males and 922,661 are
@@ -247,7 +247,7 @@ return [
         the school attending age do not receive any education whatsoever. It cannot be figured out what the exact
         numbers of people with disabilities today. But this helps generate some understanding of the people living with
         disabilities.',
-    'disability2' =>  'The majority of the people with disabilities are poor. Poverty is a consequence of disability since people with
+    'disability2' => 'The majority of the people with disabilities are poor. Poverty is a consequence of disability since people with
         disabilities often lack access to education, health services and income-generating activities. They are often
         denied their human, social and economic rights which contribute to high levels of vulnerability and exclusion.
         People with disabilities have the right to work. This has been enshrined in several national Acts and
@@ -262,27 +262,4 @@ return [
 
     'Ensuring youth engagement in program implementation' => 'Ensuring youth engagement in program implementation',
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ];
-
-?>

@@ -11,13 +11,17 @@ class CreateAr extends Component
     use WithFileUploads;
 
     public $title;
+
     public $photo;
+
     public $report;
+
     public $year;
+
     public $company;
 
-
-    public function save(){
+    public function save()
+    {
         $this->validate([
             'photo' => 'image|max:1024', // 1MB Max
             'title' => 'required',
@@ -26,7 +30,7 @@ class CreateAr extends Component
             'company' => 'required',
         ]);
 
-        if(!empty($this->photo)){
+        if (! empty($this->photo)) {
             $imageHashName = $this->photo->hashName();
             $fileHashName = $this->report->hashName();
 
@@ -37,7 +41,7 @@ class CreateAr extends Component
                 'isPublished' => false,
                 'thumb_url' => $imageHashName,
                 'file_url' => $fileHashName,
-                'added_by' => auth()->user()->id
+                'added_by' => auth()->user()->id,
             ]);
 
             $this->photo->store('public/photos/annual-reports');
@@ -48,7 +52,7 @@ class CreateAr extends Component
             $this->title = '';
             $this->year = '';
             $this->company = '';
-         }
+        }
     }
 
     public function updatedPhoto()

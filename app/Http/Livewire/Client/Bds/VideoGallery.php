@@ -8,14 +8,17 @@ use Livewire\Component;
 class VideoGallery extends Component
 {
     public $videos = [];
+
     public $count = 6;
 
-    public function mount(){
-        $this->videos = Video::where('published',true)->where('company','BDS')->get()->take($this->count);
+    public function mount()
+    {
+        $this->videos = Video::where('published', true)->where('company', 'BDS')->get()->take($this->count);
     }
 
-    public function readmore(){
-        $this->count = $this->count+3;
+    public function readmore()
+    {
+        $this->count = $this->count + 3;
         $this->mount();
     }
 

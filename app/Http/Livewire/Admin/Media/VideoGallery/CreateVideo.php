@@ -8,12 +8,17 @@ use Livewire\Component;
 class CreateVideo extends Component
 {
     public $description;
+
     public $si_description;
+
     public $ta_description;
+
     public $link;
+
     public $company;
 
-    public function save(){
+    public function save()
+    {
         $this->validate([ // 1MB Max
             'description' => 'required',
             'si_description' => 'required',
@@ -29,7 +34,7 @@ class CreateVideo extends Component
             'company' => $this->company,
             'link' => $this->link,
             'published' => false,
-            'added_by' => auth()->user()->id
+            'added_by' => auth()->user()->id,
         ]);
 
         $this->description = '';
@@ -40,7 +45,7 @@ class CreateVideo extends Component
 
         session()->flash('message', 'Video successfully inserted.');
 
-      //  return redirect()->route('videos.index');
+        //  return redirect()->route('videos.index');
     }
 
     public function render()

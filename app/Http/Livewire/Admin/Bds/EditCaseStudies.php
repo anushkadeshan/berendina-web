@@ -2,30 +2,42 @@
 
 namespace App\Http\Livewire\Admin\Bds;
 
-use Livewire\Component;
 use App\Models\Casestudy;
-use Livewire\WithFileUploads;
 use Intervention\Image\ImageManager;
+use Livewire\Component;
+use Livewire\WithFileUploads;
 
 class EditCaseStudies extends Component
 {
     use WithFileUploads;
+
     public $news_categories;
 
     public $case_id;
+
     public $title;
+
     public $sn_title;
+
     public $ta_title;
+
     public $description;
+
     public $si_description;
+
     public $ta_description;
+
     public $category;
+
     public $photo;
+
     public $image;
+
     public $active;
 
-    public function mount($id){
-        if($id){
+    public function mount($id)
+    {
+        if ($id) {
             $case = Casestudy::find($id);
             $this->case_id = $case->id;
             $this->title = $case->title;
@@ -53,15 +65,15 @@ class EditCaseStudies extends Component
             'category' => 'required',
         ]);
 
-        if(!empty($this->photo)){
+        if (! empty($this->photo)) {
             $imageHashName = $this->photo->hashName();
             $i = $this->photo->store('public/photos/bds/featured');
             $path1 = storage_path().'/app/public/photos/bds/thumb_medium/';
             $path2 = storage_path().'/app/public/photos/bds/thumb_small/';
 
             $manager = new ImageManager();
-            $image = $manager->make(storage_path().'/app/public/photos/bds/featured/'.$imageHashName)->resize(80,55);
-            $image2 = $manager->make(storage_path().'/app/public/photos/bds/featured/'.$imageHashName)->resize(330,225);
+            $image = $manager->make(storage_path().'/app/public/photos/bds/featured/'.$imageHashName)->resize(80, 55);
+            $image2 = $manager->make(storage_path().'/app/public/photos/bds/featured/'.$imageHashName)->resize(330, 225);
 
             $image2->save($path1.'/'.$imageHashName);
             $image->save($path2.'/'.$imageHashName);
@@ -75,7 +87,7 @@ class EditCaseStudies extends Component
         $case->si_description = $this->si_description;
         $case->ta_description = $this->ta_description;
         $case->category = $this->category;
-        if(!empty($this->photo)){
+        if (! empty($this->photo)) {
             $case->image = $imageHashName;
         }
         $case->added_by = auth()->user()->id;
@@ -83,18 +95,18 @@ class EditCaseStudies extends Component
 
         session()->flash('message', 'Case Study successfully updated.');
 
-         $this->title = '';
-         $this->sn_title = '';
-         $this->ta_title = '';
-         $this->description = '';
-         $this->si_description = '';
-         $this->ta_description = '';
-         $this->category = '';
-         $this->photo = '';
-
+        $this->title = '';
+        $this->sn_title = '';
+        $this->ta_title = '';
+        $this->description = '';
+        $this->si_description = '';
+        $this->ta_description = '';
+        $this->category = '';
+        $this->photo = '';
     }
 
-    public function isPublished(){
+    public function isPublished()
+    {
         $case = Casestudy::find($this->case_id);
         //dd($case);
         $case->active = $case->active ? false : true;

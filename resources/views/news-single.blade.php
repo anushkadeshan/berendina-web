@@ -1,6 +1,6 @@
 @extends('layouts.client.app')
 
-@section('title', 'Berendina - About Us')
+@section('title', 'Berendina -'. $news->title)
 
 @section('content')
     <div class="main-content">

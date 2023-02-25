@@ -1,4 +1,6 @@
 <div>
+<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+
     <section>
         <div class="container-fluid mt-30 mb-30 pt-30 pb-30">
             <div class="row">
@@ -62,12 +64,11 @@
                                 <div class="mt-30 mb-0">
                                     <h5 class="pull-left mt-10 mr-20 text-theme-colored">Share:</h5>
                                     <ul class="social-icons icon-circled m-0">
-                                        <li><a href="#" style="background-color: #3A5795"><i
+                                        <li><a href="https://www.facebook.com/dialog/share?app_id=558575609356125&display=popup&href={{url()->full()}}&redirect_uri={{url()->full()}}" style="background-color: #3A5795"><i
                                                     class="fa fa-facebook text-white"></i></a></li>
-                                        <li><a href="#" style="background-color: #55ACEE" data-bg-color="#55ACEE"><i
+                                        <li><a href="http://twitter.com/share?text=&url={{url()->full()}}&hashtags=berendina,bmic" style="background-color: #55ACEE" data-bg-color="#55ACEE"><i
                                                     class="fa fa-twitter text-white"></i></a></li>
-                                        <li><a href="#" style="background-color: #A11312" data-bg-color="#A11312"><i
-                                                    class="fa fa-instagram text-white"></i></a></li>
+                                        <li ><a style="padding-top:-10px"><script type="IN/Share" data-url="{{url()->full()}}" data-counter="middle"></script></a></li>
                                     </ul>
                                 </div>
                             </div>

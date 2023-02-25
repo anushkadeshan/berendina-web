@@ -32,7 +32,6 @@
     </div>
     <div class="container" style="margin-top: 30px;">
         <livewire:client.media.photo-gallery-single :photos="$photos"/>
-
     </div>
     <br>
     <!-- Footer -->

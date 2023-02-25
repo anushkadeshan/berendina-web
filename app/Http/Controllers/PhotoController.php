@@ -50,11 +50,13 @@ class PhotoController extends Controller
         return view('image-gallery');
     }
 
-    public function showSingle($title,$id)
+    public function showSingle(Request $request)
     {
-        $photos = Photo::where('album_id',$id)->get();
+        $id = $request->query('id');
+        $photos = Photo::where('album_id', $id)->get();
         $album = Album::find($id);
-        return view('image-gallery-single',compact('photos','album'));
+
+        return view('image-gallery-single', compact('photos', 'album'));
     }
 
     /**

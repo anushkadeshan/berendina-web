@@ -2,11 +2,11 @@
 
 namespace App\Http\Livewire\Admin\Press;
 
-use Livewire\Component;
-use Livewire\WithFileUploads;
 use App\Models\admin\NewsCategory;
 use App\Models\News;
 use Intervention\Image\ImageManager;
+use Livewire\Component;
+use Livewire\WithFileUploads;
 
 class AddNews extends Component
 {
@@ -15,14 +15,20 @@ class AddNews extends Component
     public $news_categories;
 
     public $title;
-    public $sn_title;
-    public $ta_title;
-    public $description;
-    public $si_description;
-    public $ta_description;
-    public $categories = [];
-    public $photo;
 
+    public $sn_title;
+
+    public $ta_title;
+
+    public $description;
+
+    public $si_description;
+
+    public $ta_description;
+
+    public $categories = [];
+
+    public $photo;
 
     public function save()
     {
@@ -37,7 +43,7 @@ class AddNews extends Component
             'categories' => 'required',
         ]);
 
-        if(!empty($this->photo)){
+        if (! empty($this->photo)) {
             $imageHashName = $this->photo->hashName();
 
             $news = News::create([
@@ -49,38 +55,32 @@ class AddNews extends Component
                 'ta_description' => $this->ta_description,
                 'categories' => json_encode($this->categories),
                 'image' => $imageHashName,
-                'added_by' => auth()->user()->id
+                'added_by' => auth()->user()->id,
             ]);
             $news->categories()->sync($this->categories);
             $i = $this->photo->store('public/photos/news/featured');
-         }
+        }
 
+        $path1 = storage_path().'/app/public/photos/news/thumb_medium/';
+        $path2 = storage_path().'/app/public/photos/news/thumb_small/';
 
+        $manager = new ImageManager();
+        $image = $manager->make(storage_path().'/app/public/photos/news/featured/'.$imageHashName)->resize(80, 55);
+        $image2 = $manager->make(storage_path().'/app/public/photos/news/featured/'.$imageHashName)->resize(330, 225);
 
-         $path1 = storage_path().'/app/public/photos/news/thumb_medium/';
-         $path2 = storage_path().'/app/public/photos/news/thumb_small/';
+        $image2->save($path1.'/'.$imageHashName);
+        $image->save($path2.'/'.$imageHashName);
 
+        session()->flash('message', 'News successfully inserted.');
 
-
-         $manager = new ImageManager();
-         $image = $manager->make(storage_path().'/app/public/photos/news/featured/'.$imageHashName)->resize(80,55);
-         $image2 = $manager->make(storage_path().'/app/public/photos/news/featured/'.$imageHashName)->resize(330,225);
-
-         $image2->save($path1.'/'.$imageHashName);
-         $image->save($path2.'/'.$imageHashName);
-
-         session()->flash('message', 'News successfully inserted.');
-
-         $this->title = '';
-         $this->sn_title = '';
-         $this->ta_title = '';
-         $this->description = '';
-         $this->si_description = '';
-         $this->ta_description = '';
-         $this->categories = [];
-         $this->photo = '';
-
-
+        $this->title = '';
+        $this->sn_title = '';
+        $this->ta_title = '';
+        $this->description = '';
+        $this->si_description = '';
+        $this->ta_description = '';
+        $this->categories = [];
+        $this->photo = '';
     }
 
     public function mount()

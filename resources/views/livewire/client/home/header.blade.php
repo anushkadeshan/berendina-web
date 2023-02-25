@@ -48,7 +48,7 @@
                     <div class="col-xs-12 col-sm-4 col-md-5">
                         <div class="widget no-border m-0">
                             <a class="pull-left flip xs-pull-center mb-5"
-                                href="index-mp-layout1.html"><img src="{{asset('images/logo.jpg')}}" alt=""></a>
+                                href="{{url('home')}}"><img src="{{asset('images/logo.jpg')}}" alt=""></a>
                         </div>
                     </div>
 
@@ -80,18 +80,55 @@
             </div>
         </div>
         <div class="header-nav">
-            <div class="header-nav-wrapper bg-theme-colored navbar-scrolltofixed " >
+            <div class="header-nav-wrapper bg-theme-colored navbar-scrolltofixed">
                 <div class="container">
-                    <nav id="menuzord" class="menuzord bg-theme-colored" style="color:white">
-                        <ul class="menuzord-menu text-white">
-                            <li class="text-white"><a class="{{Request::is('/') ? 'menuactive' : 'none;' }} text-white" href="{{url('/')}}">Home</a></li>
+                    <nav id="menuzord" class="menuzord bg-theme-colored">
+                        <ul class="menuzord-menu bg-theme-colored">
+                            <li class=""><a class="{{Request::is('home') ? 'menuactive' : 'none;' }} text-white" href="{{url('/home')}}">Home</a></li>
                             <li class="text-white"><a class="{{Request::is('about-us') ? 'menuactive' : 'none;' }} text-white" href="{{url('/about-us')}}">About Us</a></li>
                             <li class="text-white"><a class="text-white {{Request::is('bds-what-we-do') ||  Request::is('bds-who-we-are') || Request::is('bds-where-we-work') || Request::is('bds-media')? 'menuactive' : 'none;' }} href="#">BDS</a>
                                 <ul class="dropdown">
-                                    <li><a href="{{url('bds-who-we-are')}}">Who We Are</a></li>
-                                    <li><a href="{{url('bds-what-we-do')}}">What We Do</a></li>
+                                    <li>
+                                        <a href="">Who We Are</a>
+                                        <ul class="dropdown">
+                                            <li><a href="{{url('bds-about-us')}}">About Us</a></li>
+                                            <li><a href="{{url('bds-milestones')}}">History - Milestones</a></li>
+                                            <li><a href="">Leadership</a>
+                                                <ul class="dropdown">
+                                                    <li><a href="{{url('bds-board-and-governance')}}">Board and Governance</a></li>
+                                                    <li><a href="{{url('bds-management-team')}}">Management Team</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="{{url('bds-partners')}}">Partners</a></li>
+                                            <li><a href="{{url('bds-financial-higlights')}}">Financial Highlights</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="">What We Do</a>
+                                        <ul class="dropdown">
+                                            <li><a href="{{url('bds-key-strategic-components')}}">Key Strategic components</a></li>
+                                            <li><a href="{{url('bds-strategic-cross-cutting-themes')}}">Stratergic cross-cutting themes</a></li>
+                                            <li><a href="">Disaster Response</a>
+                                                <ul class="dropdown">
+                                                    <li><a href="{{url('bds-disaster-response-covid-19')}}">COVID 19</a></li>
+                                                    <li><a href="{{url('bds-disaster-response-economic-crisis')}}">Economic Crisis</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
                                     <li><a href="{{url('bds-where-we-work')}}">Where-We-Work</a></li>
-                                    <li><a href="{{url('bds-media')}}">Our Media</a></li>
+                                    <li><a href="{{url('bds-case-studies')}}">Case Studies</a></li>
+                                    <li><a href="{{url('bds-media')}}">Media</a>
+                                        <ul class="dropdown">
+                                            <li><a href="{{url('bds-press-releases')}}">BDS in Mass Media</a></li>
+                                            <li><a href="">Gallery</a>
+                                                <ul class="dropdown">
+                                                    <li><a href="{{url('bds-photo-gallery')}}">Photos</a></li>
+                                                    <li><a href="{{url('bds-video-gallery')}}">Videos</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="{{url('bds-annual-reports')}}">Annual Reports</a></li>
                                 </ul>
                             </li>
                             <li><a class="text-white {{Request::is('bmic-about-us') || Request::is('bmic-our-services') || Request::is('bmic-social-performance-management') ? 'menuactive' : 'none;' }}" href="">BMIC</a>
@@ -99,16 +136,16 @@
                                     <li><a href="{{url('bmic-about-us')}}">Who We Are</a></li>
                                     <li><a href="{{url('bmic-our-services')}}">Our Services</a></li>
                                     <li><a href="{{url('bmic-social-performance-management')}}">Social Performance Management (SPM)</a></li>
-                                    <li><a href="{{url('bmic-environment')}}">Environment</a></li>
+                                    <li><a href="{{url('bmic-environment')}}">Environment Protection Initiatives</a></li>
                                     <li><a href="{{url('bmic-annual-reports')}}">Annual Reports</a></li>
                                     <li><a href="{{url('bmic-awards-and-appreciations')}}">Awards and Appreciations</a></li>
+                                    <li><a href="{{url('bmic-case-studies')}}">Case Studies</a></li>
                                     <li><a href="{{url('bmic-media')}}">Media</a></li>
                                 </ul>
                             </li>
 
                             <li><a class="text-white {{Request::is('press') || Request::is('berendina-image-gallery') || Request::is('berendina-video-gallery') || Request::is('all-news') ? 'menuactive' : 'none;' }}" href="">Press</a>
                                 <ul class="dropdown">
-                                    <li><a class="{{Request::is('press')}} ? 'menuactive' : 'none;' " href="{{url('')}}">Press</a></li>
                                     <li><a class="{{Request::is('berendina-image-gallerpressy')}} ? 'menuactive' : 'none;' " href="{{url('berendina-image-gallery')}}">Berendina Images</a></li>
                                     <li><a class="{{Request::is('berendina-video-gallery')}} ? 'menuactive' : 'none;' " href="{{url('berendina-video-gallery')}}">Berendina Videos</a></li>
                                     <li><a class="{{Request::is('all-news')}} ? 'menuactive' : 'none;' " href="{{url('all-news')}}">All Berendina News</a></li>
@@ -117,7 +154,7 @@
                             <li><a class="text-white {{Request::is('covid-19') ? 'menuactive' : 'none;' }}" href="{{url('covid-19')}}">COVID 19</a></li>
                             <li><a class="text-white {{Request::is('careers') ? 'menuactive' : 'none;' }}" href="{{url('careers')}}">Careers</a></li>
                             <li><a class="text-white {{Request::is('contact-us') ? 'menuactive' : 'none;' }}" href="{{url('contact-us')}}">Contacts</a></li>
-                            
+
                         </ul>
                         {{--
                         <ul class="list-inline pull-right flip hidden-sm hidden-xs">

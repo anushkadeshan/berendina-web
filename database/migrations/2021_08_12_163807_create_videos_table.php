@@ -18,7 +18,7 @@ class CreateVideosTable extends Migration
             $table->text('description')->nullable();
             $table->text('si_description')->nullable();
             $table->text('ta_description')->nullable();
-            $table->string('link',355)->nullable();
+            $table->string('link', 355)->nullable();
             $table->boolean('published')->nullable()->default(false);
             $table->integer('added_by')->nullable();
             $table->timestamps();

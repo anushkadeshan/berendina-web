@@ -1,6 +1,6 @@
 <div>
     <style>
-        .timeline ul {
+          .timeline ul {
             padding: 50px 0;
             color: #fff;
         }
@@ -11,7 +11,7 @@
             width: 6px;
             margin: 0 auto;
             padding-top: 50px;
-            background: #C70039;
+            background: #5D9CEC;
         }
 
         .timeline ul li::after {
@@ -32,7 +32,7 @@
             bottom: 0;
             width: 400px;
             padding: 15px;
-            background: #900C3F;
+            background: #FF5722;
         }
 
         .timeline ul li div::before {
@@ -51,7 +51,7 @@
         .timeline ul li:nth-child(odd) div::before {
             left: -15px;
             border-width: 8px 16px 8px 0;
-            border-color: transparent #900C3F transparent transparent;
+            border-color: transparent #FF5722 transparent transparent;
         }
 
         .timeline ul li:nth-child(even) div {
@@ -61,7 +61,7 @@
         .timeline ul li:nth-child(even) div::before {
             right: -15px;
             border-width: 8px 0 8px 16px;
-            border-color: transparent transparent transparent #900C3F;
+            border-color: transparent transparent transparent #FF5722;
         }
 
         time {
@@ -80,7 +80,7 @@
         }
 
         .timeline ul li.in-view::after {
-            background: #900C3F;
+            background: #FF5722;
         }
 
         .timeline ul li div {
@@ -102,6 +102,8 @@
             visibility: visible;
             opacity: 1;
         }
+
+
 
 
         /* GENERAL MEDIA QUERIES
@@ -196,7 +198,7 @@
             }
         }
     </style>
-    <h2 class="line-bottom m-10 p-20">@lang('msg.35 YEARS OF FIGHTING FOR AN EMPOWERED AND EQUITABLE SOCIETY AS BDS.') </h2>
+    <h2 class="line-bottom m-10 p-20">ENDEAVORING 35 YEARS FOR CREATING AN EMPOWERED AND EQUITABLE SOCIETY</h2>
     <section class="timeline">
         <ul>
             <li>
@@ -247,30 +249,15 @@
             </li>
             <li>
                 <div>
-                    <time>2017</time>
+                    <time>2020</time>
                     <p style="text-align: justify;">
-                        @lang('msg.2017')
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <time>2019</time>
-                    <p style="text-align: justify;">
-                        @lang('msg.2019')
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <time>2021</time>
-                    <p style="text-align: justify;">
-                        @lang('msg.2021')
+                        @lang('msg.2020')
                     </p>
                 </div>
             </li>
         </ul>
     </section>
+    <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
     <script>
         (function () {
             "use strict";

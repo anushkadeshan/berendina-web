@@ -4,20 +4,23 @@ namespace App\Http\Livewire\Client\Contact;
 
 use App\Mail\ContactUser;
 use App\Models\Conatct;
-use Livewire\Component;
 use Illuminate\Support\Facades\Mail;
+use Livewire\Component;
 
 class ContactUs extends Component
 {
-
     public $name;
+
     public $email;
+
     public $subject;
+
     public $phone;
+
     public $message;
 
-    public function submit(){
-        
+    public function submit()
+    {
         $this->validate([
             'name' => 'required',
             'email' => 'required',
@@ -31,7 +34,7 @@ class ContactUs extends Component
             'subject' => $this->subject,
             'phone' => $this->phone,
             'message' => $this->message,
-            'action_taken' => false
+            'action_taken' => false,
         ]);
 
         $this->name = '';
@@ -39,7 +42,6 @@ class ContactUs extends Component
         $this->subject = '';
         $this->phone = '';
         $this->message = '';
-
 
         Mail::to('deshan@bds.berendina.org')->send(new ContactUser($contact));
 

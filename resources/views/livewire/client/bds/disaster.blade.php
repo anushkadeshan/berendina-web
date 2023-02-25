@@ -12,26 +12,17 @@
                 equipment and other items required.
                 <br>
                 <br>
-                Most of our focus was directed towards the equipping Intermediate Care Centers with required necessary
-                medical equipment such as oxygen therapy equipment which includes oxygen concentrators, oxygen cylinders
-                and connectors, Pulse Oximeters, Multipara monitors, PPE etc. and other items required for the critical
-                functioning of the Intermediate Care Centers.
+                In 2021, our focus was directed towards the equipping Intermediate Care Centers with required necessary medical equipment such as oxygen therapy equipment which includes oxygen concentrators, oxygen cylinders and connectors, Pulse Oximeters, Multipara monitors, PPE etc. and other items required for the critical functioning of the Intermediate Care Centers.
                 <br>
 
             </p>
         </div>
         <p class="text-justify mt-10">
             <br>
-                Packs of dry rations and other items were distributed to the care homes and quarantined families. It
-                contained staples such as rice, sugar, milk powder and sugar, etc, including sanitary products, medicine
-                and supplementary products such as Panadol, Isocal and Diabetasol. As well as personal hygiene products
-                such as toothpaste, toothbrushes and soap. The objective of the relief assistance was to improve the
-                daily food consumption of households that were most vulnerable and to maintain acceptable levels of
-                nutrition and hygiene conditions
+            Packs of dry rations and other items were distributed to the care homes and quarantined families. Dry rations contained essential staples such as rice, milk powder and sugar, etc, including sanitary products, medicine and supplementary products such as Panadol, Isocal and Diabetasol. The objective of the relief assistance was to maintain acceptable levels of nutrition and hygiene conditions of most vulnerable families.
                 <br>
                 <br>
-                As part of our Bright Student Scholarship stipend, we granted students with an allowance to assist with
-                their required online learning to purchase data, as schools were closed due to the pandemic.
+                As part of our Bright Student Scholarship program, we granted students with an additional allowance to purchase data packages in order to ensure continuation of their education through online platforms during the time of school closure due to the pandemic.
         </p>
     </div>
     <div class="row fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">

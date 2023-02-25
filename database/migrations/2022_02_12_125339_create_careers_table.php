@@ -15,14 +15,14 @@ class CreateCareersTable extends Migration
     {
         Schema::create('careers', function (Blueprint $table) {
             $table->id();
-            $table->string('title',555);
-            $table->string('si_title',555);
-            $table->string('ta_title',555);
+            $table->string('title', 555);
+            $table->string('si_title', 555);
+            $table->string('ta_title', 555);
             $table->text('job_description');
             $table->text('si_job_description');
             $table->text('ta_job_description');
-            $table->string('closing_date',50);
-            $table->string('company',50);
+            $table->string('closing_date', 50);
+            $table->string('company', 50);
             $table->timestamps();
         });
     }

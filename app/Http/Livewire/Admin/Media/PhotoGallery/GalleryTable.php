@@ -3,10 +3,10 @@
 namespace App\Http\Livewire\Admin\Media\PhotoGallery;
 
 use App\Models\Album;
-use Mediconesystems\LivewireDatatables\Column;
-use Mediconesystems\LivewireDatatables\NumberColumn;
 use Mediconesystems\LivewireDatatables\BooleanColumn;
+use Mediconesystems\LivewireDatatables\Column;
 use Mediconesystems\LivewireDatatables\Http\Livewire\LivewireDatatable;
+use Mediconesystems\LivewireDatatables\NumberColumn;
 
 class GalleryTable extends LivewireDatatable
 {

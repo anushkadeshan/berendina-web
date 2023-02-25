@@ -46,12 +46,14 @@ data-wow-delay="0.3s" style="margin-top:20px">
 <div class="row">
     <div class="col-xs-12 col-sm-6 col-md-6">
         <div class="row  ml-0 pl-0" style="background-color: white;">
-            <div class="col-xs-12 col-sm-6 col-md-6">
-                <div class="box arrow-right">
-                    <h1 class="text-center text-white"><b>BDS</b></h1>
-                    <h4 class="text-center text-white">Berendina Development Services Guarantee Limited</h4>
-                  </div>
-            </div>
+            <a href="{{url('bds-about-us')}}">
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="box arrow-right">
+                        <h1 class="text-center text-white"><b>BDS</b></h1>
+                        <h4 class="text-center text-white">Berendina Development Services Guarantee Limited</h4>
+                    </div>
+                </div>
+            </a>
             <div class="col-xs-12 col-sm-6 col-md-6 p-10" >
                 <nav>
                     <ul>
@@ -67,12 +69,14 @@ data-wow-delay="0.3s" style="margin-top:20px">
 
     <div class="col-xs-12 col-sm-6 col-md-6">
         <div class="row  ml-0 pl-0" style="background-color: white;">
-            <div class="col-xs-12 col-sm-6 col-md-6">
-                <div class="box2 arrow-right2">
-                    <h1 class="text-center text-white"><b>BMIC</b></h1>
-                    <h4 class="text-center text-white">Berendina Micro Investments Company Limited</h4>
-                  </div>
-            </div>
+            <a href="{{url('bmic-about-us')}}">
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="box2 arrow-right2">
+                        <h1 class="text-center text-white"><b>BMIC</b></h1>
+                        <h4 class="text-center text-white">Berendina Micro Investments Company Limited</h4>
+                    </div>
+                </div>
+            </a>
             <div class="col-xs-12 col-sm-6 col-md-6 p-10" >
                 <nav>
                     <ul>

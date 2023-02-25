@@ -24,11 +24,11 @@
             </div>
         </div>
         <div class="row mt-20 wow fadeInLeft">
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <p class="text-justify">@lang('msg.BDS-about-us') </p>
             </div>
             <div class="col-md-6">
-                <p class="text-justify">@lang('msg.BDS-about-us-two')</p>
+
             </div>
         </div>
         <div class="mt-40 fadeInLeft" style="background-color:beige;">
@@ -61,11 +61,12 @@
                         •	@lang('msg.Elders') <br>
                         •	@lang('msg.Women-headed families') <br>
                         •	@lang('msg.Differently-abled people') <br>
+                        •	Youth <br>
                     </p>
                 </div>
                 <div class="col-md-3">
                     <p class="text-md-left text-center">
-                        <h4 class="text-theme-colored mb-10">@lang('msg.CONCERNING')</h4>
+                        <h4 class="text-theme-colored mb-10">CORE INTERVENTIONS </h4>
                         •	@lang('msg.Livelihoods') <br>
                         •	@lang('msg.Economic') <br>
                         •	@lang('msg.Health') <br>

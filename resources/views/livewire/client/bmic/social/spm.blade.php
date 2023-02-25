@@ -1,5 +1,5 @@
 <div class="container">
-    <p class="text-justify mt-20" style="text-align: justify;">Poverty alleviation by increasing sustainable income sources, useful assets together with required knowledge and skills is centre to the first bottom line of BMIC services. There are different strategies, approaches and activities of BMIC to ensure continuous focus of this bottom line.
+    <p class="text-justify mt-20" style="text-align: justify;">Poverty alleviation by increasing sustainable income sources, useful assets together with required knowledge and skills is center to the first bottom line of BMIC services. There are different strategies, approaches and activities of BMIC to ensure continuous focus of this bottom line.
     </p>
 
     <h4 class="line-bottom mt-20">1. Poverty Focused Approach</h4>
@@ -36,10 +36,10 @@
     <h4 class="line-bottom mt-40">5. Value Added Services</h4>
     <h5><b>Client Appreciation</b></h5>
     <p class="text-justify mt-20" style="text-align: justify;">
-        BMIC conducts branch wise Best Cluster selection program based on the cluster performance including the community activities they have done. Accordingly, Field Officers area wise and overall branch level best clusters are selected and financial rewards are presented at the cluster leader’s program where all leaders of the branch are invited. These financial rewards are utilised for common activities of the cluster with the consent of other members. The Field Officer who mostly contributed for branch best cluster is also rewarded at this event.
+        BMIC conducts branch wise Best Cluster selection program based on the cluster performance including the community activities they have done. Accordingly, Field Officers area wise and overall branch level best clusters are selected and financial rewards are presented at the cluster leader’s program where all leaders of the branch are invited.
         <br>
         <br>
-        From its inception, BMIC organizes Best Entrepreneur Awards with a gala awarding ceremony biennially. This event showcases the real impact of microfinance as an effective intervention in the economic empowerment of low-income people to become productive contributors to the economy of the country. The awards are given under five categories as Emerging enterprise, Agro-based enterprise, Livestock-based enterprise, Micro-enterprise and Small enterprise. This contest is a motivation booster for many entrepreneurs to start, develop and expand their enterprises. The entrepreneurs from above sectors are being appreciated in district, province and national level.
+        From its inception, BMIC organizes Best Entrepreneur Awards with a gala awarding ceremony biennially. This event showcases the real impact of microfinance as an effective intervention in the economic empowerment of low-income people to become productive contributors to the economy of the country.
     </p>
     <p class="text-justify" style="text-align: justify;">
         <b>Suwasahana Scheme:</b> BMIC’s clients are provided with special cash benefits via Suwasahana Scheme. In the event of funeral in the family LKR 6,000 hospitalization benefit of LKR 3,000 a year is provided to clients under this scheme. Yearly contribution for this scheme is around LKR 8 Mn.Since 2016, a total sum of LKR 62 Mn has been provided to clients under this scheme.

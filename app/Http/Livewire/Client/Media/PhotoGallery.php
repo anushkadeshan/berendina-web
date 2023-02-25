@@ -7,11 +7,13 @@ use Livewire\Component;
 
 class PhotoGallery extends Component
 {
-    public $albums =[];
+    public $albums = [];
 
-    public function mount(){
+    public function mount()
+    {
         $this->albums = Album::where('isPublished', true)->get();
     }
+
     public function render()
     {
         return view('livewire.client.media.photo-gallery');

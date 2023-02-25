@@ -9,7 +9,8 @@ class Categories extends Component
 {
     public $categories;
 
-    public function mount(){
+    public function mount()
+    {
         $this->categories = NewsCategory::get();
     }
 

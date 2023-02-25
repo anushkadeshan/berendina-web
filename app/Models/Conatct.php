@@ -10,7 +10,8 @@ class Conatct extends Model
     use HasFactory;
 
     protected $table = 'contacts';
+
     public $fillable = [
-        'name', 'email', 'subject', 'phone', 'message', 'action_taken'
+        'name', 'email', 'subject', 'phone', 'message', 'action_taken',
     ];
 }

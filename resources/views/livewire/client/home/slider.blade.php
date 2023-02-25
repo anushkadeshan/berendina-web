@@ -48,7 +48,7 @@
                             </div>
 
                             <!-- LAYER NR. 3 -->
-                            <div class="tp-caption tp-resizeme text-white text-center" id="rs-1-layer-3"
+                            <div class="tp-caption tp-resizeme text-white text-center font-raleway pl-30 pr-30" id="rs-1-layer-3"
                                 data-x="['center']" data-hoffset="['0']" data-y="['middle']"
                                 data-voffset="['50']" data-fontsize="['16']" data-lineheight="['28']"
                                 data-width="none" data-height="none" data-whitespace="nowrap"
@@ -65,7 +65,7 @@
 
                             <!-- LAYER NR. 4 -->
                             <div class="tp-caption tp-resizeme" id="rs-1-layer-4" data-x="['center']"
-                                data-hoffset="['0']" data-y="['middle']" data-voffset="['115']"
+                                data-hoffset="['0']" data-y="['middle']" data-voffset="['105']"
                                 data-width="none" data-height="none" data-whitespace="nowrap"
                                 data-transform_idle="o:1;"
                                 data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
@@ -74,8 +74,8 @@
                                 data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1400"
                                 data-splitin="none" data-splitout="none" data-responsive_offset="on"
                                 style="z-index: 5; white-space: nowrap; letter-spacing:1px;"><a
-                                    class="btn btn-default btn-circled btn-transparent pl-20 pr-20"
-                                    href="#">Donate Now</a>
+                                    class="btn btn-colored btn-lg btn-success btn-circled pl-20 pr-20" href="#">Donate
+                                    Now</a>
                             </div>
                         </li>
 
@@ -149,7 +149,7 @@
                                     Now</a>
                             </div>
                         </li>
-
+                        {{--
                         <!-- SLIDE 3 -->
                         <li data-index="rs-3" data-transition="slidingoverlayhorizontal"
                             data-slotamount="default" data-easein="default" data-easeout="default"
@@ -295,7 +295,7 @@
                                     href="#">Donate Now</a>
                             </div>
                         </li>
-
+                        --}}
                     </ul>
                 </div>
                 <!-- end .rev_slider -->
@@ -356,7 +356,7 @@
                                 h_offset: 0,
                                 v_offset: 30,
                                 space: 5,
-                                tmp: '<span class="tp-bullet-img-wrap">  <span class="tp-bullet-image"></span></span><span class="tp-bullet-title">title</span>'
+                                tmp: '<span class="tp-bullet-img-wrap">  <span class="tp-bullet-image"></span></span><span class="tp-bullet-title">Berendina</span>'
                             }
                         },
                         responsiveLevels: [1240, 1024, 778],

@@ -7,14 +7,21 @@ use Livewire\Component;
 class WhatWeDo2 extends Component
 {
     public $key = true;
+
     public $disaster = false;
+
     public $gender = false;
+
     public $envirnment = false;
+
     public $disability = false;
+
     public $youth = false;
+
     public $meal = false;
 
-    public function loadKey(){
+    public function loadKey()
+    {
         $this->key = true;
         $this->disaster = false;
         $this->gender = false;
@@ -24,7 +31,8 @@ class WhatWeDo2 extends Component
         $this->meal = false;
     }
 
-    public function loadDisaster(){
+    public function loadDisaster()
+    {
         $this->key = false;
         $this->disaster = true;
         $this->gender = false;
@@ -33,7 +41,9 @@ class WhatWeDo2 extends Component
         $this->youth = false;
         $this->meal = false;
     }
-    public function loadGender(){
+
+    public function loadGender()
+    {
         $this->key = false;
         $this->disaster = false;
         $this->gender = true;
@@ -43,7 +53,8 @@ class WhatWeDo2 extends Component
         $this->meal = false;
     }
 
-    public function LoadDisability(){
+    public function LoadDisability()
+    {
         $this->key = false;
         $this->disaster = false;
         $this->gender = false;
@@ -53,7 +64,8 @@ class WhatWeDo2 extends Component
         $this->meal = false;
     }
 
-    public function LoadEnvirnment(){
+    public function LoadEnvirnment()
+    {
         $this->key = false;
         $this->disaster = false;
         $this->gender = false;
@@ -63,7 +75,8 @@ class WhatWeDo2 extends Component
         $this->meal = false;
     }
 
-    public function LoadYouth(){
+    public function LoadYouth()
+    {
         $this->key = false;
         $this->disaster = false;
         $this->gender = false;
@@ -73,7 +86,8 @@ class WhatWeDo2 extends Component
         $this->meal = false;
     }
 
-    public function LoadMeal(){
+    public function LoadMeal()
+    {
         $this->key = false;
         $this->disaster = false;
         $this->gender = false;
@@ -82,9 +96,9 @@ class WhatWeDo2 extends Component
         $this->youth = false;
         $this->meal = true;
     }
-    
+
     public function render()
-    { 
+    {
         return view('livewire.client.bds.what-we-do2');
     }
 }

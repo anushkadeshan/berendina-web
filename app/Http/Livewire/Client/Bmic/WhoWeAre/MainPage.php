@@ -7,14 +7,21 @@ use Livewire\Component;
 class MainPage extends Component
 {
     public $about_us = false;
+
     public $history = true;
+
     public $values = false;
+
     public $board = false;
+
     public $management = false;
+
     public $footprints = false;
+
     public $partners = false;
 
-    public function loadAboutUs(){
+    public function loadAboutUs()
+    {
         $this->about_us = true;
         $this->history = false;
         $this->history = false;
@@ -24,7 +31,8 @@ class MainPage extends Component
         $this->board = false;
     }
 
-    public function loadHistory(){
+    public function loadHistory()
+    {
         $this->history = true;
         $this->about_us = false;
         $this->history = false;
@@ -34,7 +42,8 @@ class MainPage extends Component
         $this->board = false;
     }
 
-    public function loadValues(){
+    public function loadValues()
+    {
         $this->values = true;
         $this->about_us = false;
         $this->history = false;
@@ -44,7 +53,8 @@ class MainPage extends Component
         $this->board = false;
     }
 
-    public function loadBoard(){
+    public function loadBoard()
+    {
         $this->board = true;
         $this->about_us = false;
         $this->history = false;
@@ -54,7 +64,8 @@ class MainPage extends Component
         $this->values = false;
     }
 
-    public function loadManagement(){
+    public function loadManagement()
+    {
         $this->management = true;
         $this->board = false;
         $this->about_us = false;
@@ -64,7 +75,8 @@ class MainPage extends Component
         $this->values = false;
     }
 
-    public function loadFootprints(){
+    public function loadFootprints()
+    {
         $this->footprints = true;
         $this->management = false;
         $this->board = false;
@@ -74,7 +86,8 @@ class MainPage extends Component
         $this->values = false;
     }
 
-    public function loadPartners(){
+    public function loadPartners()
+    {
         $this->partners = true;
         $this->footprints = false;
         $this->management = false;

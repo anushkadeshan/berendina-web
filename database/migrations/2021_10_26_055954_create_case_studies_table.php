@@ -15,13 +15,13 @@ class CreateCaseStudiesTable extends Migration
     {
         Schema::create('case_studies', function (Blueprint $table) {
             $table->id();
-            $table->string('title',400)->nullable();
+            $table->string('title', 400)->nullable();
             $table->text('description')->nullable();
-            $table->string('si_title',400)->nullable();
+            $table->string('si_title', 400)->nullable();
             $table->text('si_description')->nullable();
-            $table->string('ta_title',400)->nullable();
+            $table->string('ta_title', 400)->nullable();
             $table->text('ta_description')->nullable();
-            $table->string('category',100)->nullable();
+            $table->string('category', 100)->nullable();
             $table->boolean('active')->nullable()->default(false);
             $table->timestamps();
         });

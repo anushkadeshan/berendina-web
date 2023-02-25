@@ -2,13 +2,12 @@
 
 namespace App\Http\Livewire\Admin\Management;
 
-use Livewire\Component;
 use App\Models\Admin\Management;
+use Mediconesystems\LivewireDatatables\BooleanColumn;
 use Mediconesystems\LivewireDatatables\Column;
 use Mediconesystems\LivewireDatatables\DateColumn;
-use Mediconesystems\LivewireDatatables\NumberColumn;
-use Mediconesystems\LivewireDatatables\BooleanColumn;
 use Mediconesystems\LivewireDatatables\Http\Livewire\LivewireDatatable;
+use Mediconesystems\LivewireDatatables\NumberColumn;
 
 class TeamTable extends LivewireDatatable
 {
@@ -33,4 +32,3 @@ class TeamTable extends LivewireDatatable
         ];
     }
 }
-

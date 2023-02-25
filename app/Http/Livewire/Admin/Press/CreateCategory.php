@@ -13,7 +13,8 @@ class CreateCategory extends Component
         'name' => 'required',
     ];
 
-    public function save(){
+    public function save()
+    {
         $this->validate();
         NewsCategory::create([
             'name' => $this->name,

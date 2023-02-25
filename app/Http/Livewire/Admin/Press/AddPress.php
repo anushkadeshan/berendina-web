@@ -2,20 +2,25 @@
 
 namespace App\Http\Livewire\Admin\Press;
 
-use Livewire\Component;
-use Livewire\WithFileUploads;
 use App\Models\admin\PressRelease;
 use Intervention\Image\ImageManager;
+use Livewire\Component;
+use Livewire\WithFileUploads;
 
 class AddPress extends Component
 {
     use WithFileUploads;
 
     public $title;
+
     public $si_title;
+
     public $ta_title;
+
     public $published_date;
+
     public $company;
+
     public $photo;
 
     public function save()
@@ -29,7 +34,7 @@ class AddPress extends Component
             'company' => 'required',
         ]);
 
-        if(!empty($this->photo)){
+        if (! empty($this->photo)) {
             $imageHashName = $this->photo->hashName();
             $news = PressRelease::create([
                 'title' => $this->title,
@@ -39,29 +44,29 @@ class AddPress extends Component
                 'published_date' => $this->published_date,
                 'photo' => $imageHashName,
                 'isPublished' => false,
-                'added_by' => auth()->user()->id
+                'added_by' => auth()->user()->id,
             ]);
             $i = $this->photo->store('public/photos/press-releases/featured');
-         }
+        }
 
-         $path1 = storage_path().'/app/public/photos/press-releases/thumb/';
+        $path1 = storage_path().'/app/public/photos/press-releases/thumb/';
 
-         $manager = new ImageManager();
+        $manager = new ImageManager();
 
-         $image1 = $manager->make(storage_path().'/app/public/photos/press-releases/featured/'.$imageHashName)->resize(330,225,function ($constraint) {
+        $image1 = $manager->make(storage_path().'/app/public/photos/press-releases/featured/'.$imageHashName)->resize(330, 225, function ($constraint) {
             $constraint->aspectRatio();
         });
 
-         $image1->save($path1.'/'.$imageHashName);
+        $image1->save($path1.'/'.$imageHashName);
 
-         session()->flash('message', 'Press Release successfully inserted.');
+        session()->flash('message', 'Press Release successfully inserted.');
 
-         $this->title = '';
-         $this->sn_title = '';
-         $this->ta_title = '';
-         $this->published_date = '';
-         $this->company = '';
-         $this->photo = '';
+        $this->title = '';
+        $this->sn_title = '';
+        $this->ta_title = '';
+        $this->published_date = '';
+        $this->company = '';
+        $this->photo = '';
     }
 
     public function render()

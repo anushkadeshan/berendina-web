@@ -58,6 +58,7 @@ class VideosController extends Controller
     public function edit($id)
     {
         $video = Video::find($id);
+
         return view('admin.media.video-gallery.edit-video', compact('video'));
     }
 

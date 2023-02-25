@@ -8,8 +8,10 @@ use Livewire\Component;
 class CareersList extends Component
 {
     public $careers = [];
-    public function mount(){
-        $careers = Career::where('is_published',true)->orderBy('closing_date','DESC')->get();
+
+    public function mount()
+    {
+        $careers = Career::where('is_published', true)->orderBy('closing_date', 'DESC')->get();
         $this->careers = $careers;
     }
 

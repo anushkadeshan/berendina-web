@@ -2,20 +2,23 @@
 
 namespace App\Http\Livewire\Client\Bmic\Media;
 
-use Livewire\Component;
 use App\Models\Casestudy;
+use Livewire\Component;
 
 class CaseStudies extends Component
 {
     public $count = 3;
+
     public $cases;
 
-    public function mount(){
-        $this->cases = Casestudy::latest()->where('category','BMIC')->where('active', true)->get()->take($this->count);
+    public function mount()
+    {
+        $this->cases = Casestudy::latest()->where('category', 'BMIC')->where('active', true)->get()->take($this->count);
     }
 
-    public function readmore(){
-        $this->count = $this->count+3;
+    public function readmore()
+    {
+        $this->count = $this->count + 3;
         $this->mount();
     }
 

@@ -1,4 +1,10 @@
 <div class="container-fluid">
+    CBM <br>
+    HSBC<br>
+    TESCO<br>
+    UNDP<br>
+
+    Please provide Logos
     {{--
     <div class="row mt-20 ml-20">
         <h2 class="line-bottom">@lang('msg.List of Partner Organizations') 2019-2021</h2>

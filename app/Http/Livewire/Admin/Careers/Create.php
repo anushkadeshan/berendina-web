@@ -2,23 +2,31 @@
 
 namespace App\Http\Livewire\Admin\Careers;
 
-use Livewire\Component;
 use App\Models\admin\Career;
+use Livewire\Component;
 
 class Create extends Component
 {
     public $title;
+
     public $si_title;
+
     public $ta_title;
+
     public $job_description;
+
     public $si_job_description;
+
     public $ta_job_description;
+
     public $closing_date;
+
     public $company;
+
     public $is_published;
 
-
-    public function save(){
+    public function save()
+    {
         $this->validate([
             'title' => 'required', // 1MB Max
             'si_title' => 'required',
@@ -37,12 +45,12 @@ class Create extends Component
             'closing_date' => $this->closing_date,
             'company' => $this->company,
             'is_published' => false,
-            'added_by' => auth()->user()->id
+            'added_by' => auth()->user()->id,
         ]);
 
         session()->flash('message', 'Career successfully inserted.');
-
     }
+
     public function render()
     {
         return view('livewire.admin.careers.create');

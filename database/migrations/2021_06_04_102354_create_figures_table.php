@@ -15,9 +15,11 @@ class CreateFiguresTable extends Migration
     {
         Schema::create('figures', function (Blueprint $table) {
             $table->id();
+            $table->integer('order')->nullable();
             $table->string('figure_name');
             $table->double('amount');
             $table->string('icon_location');
+            $table->string('background_css')->nullable();
             $table->timestamps();
         });
     }

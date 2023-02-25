@@ -18,7 +18,7 @@ class CreateMediaTable extends Migration
             $table->text('description')->nullable();
             $table->text('si_description')->nullable();
             $table->text('ta_description')->nullable();
-            $table->string('image',355)->nullable();
+            $table->string('image', 355)->nullable();
             $table->timestamps();
         });
     }

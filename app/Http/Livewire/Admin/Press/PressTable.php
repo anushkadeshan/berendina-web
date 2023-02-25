@@ -2,17 +2,15 @@
 
 namespace App\Http\Livewire\Admin\Press;
 
-use Livewire\Component;
 use App\Models\admin\PressRelease;
+use Mediconesystems\LivewireDatatables\BooleanColumn;
 use Mediconesystems\LivewireDatatables\Column;
 use Mediconesystems\LivewireDatatables\DateColumn;
-use Mediconesystems\LivewireDatatables\NumberColumn;
-use Mediconesystems\LivewireDatatables\BooleanColumn;
 use Mediconesystems\LivewireDatatables\Http\Livewire\LivewireDatatable;
+use Mediconesystems\LivewireDatatables\NumberColumn;
 
 class PressTable extends LivewireDatatable
 {
-
     public $model = PressRelease::class;
 
     public function columns()

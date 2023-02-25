@@ -15,9 +15,9 @@ class CreatePressReleasesTable extends Migration
     {
         Schema::create('press_releases', function (Blueprint $table) {
             $table->id();
-            $table->string('title',500)->nullable();
-            $table->string('sn_title',500)->nullable();
-            $table->string('ta_title',500)->nullable();
+            $table->string('title', 500)->nullable();
+            $table->string('sn_title', 500)->nullable();
+            $table->string('ta_title', 500)->nullable();
             $table->string('thumb')->nullable();
             $table->string('photo')->nullable();
             $table->string('published_date')->nullable();

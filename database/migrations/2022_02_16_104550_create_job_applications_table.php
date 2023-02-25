@@ -15,11 +15,11 @@ class CreateJobApplicationsTable extends Migration
     {
         Schema::create('job_applications', function (Blueprint $table) {
             $table->id();
-            $table->string('name',500);
-            $table->string('email',500);
-            $table->string('sex',500);
+            $table->string('name', 500);
+            $table->string('email', 500);
+            $table->string('sex', 500);
             $table->text('message')->nullable();
-            $table->string('cv',500);
+            $table->string('cv', 500);
             $table->bigInteger('career_id')->unsigned()->index()->nullable();
             $table->foreign('career_id')->references('id')->on('careers')->onDelete('cascade');
             $table->timestamps();

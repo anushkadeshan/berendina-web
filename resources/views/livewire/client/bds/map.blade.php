@@ -1,8 +1,13 @@
 <div>
-    {{-- <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1QjHcCnbgtl7xqkw_pEC82--o4_qjVIyE" width="640" height="480"></iframe>--}}
+    {{-- <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1QjHcCnbgtl7xqkw_pEC82--o4_qjVIyE" width="640" height="480"></iframe>
     <div class="container-fluid">
         <div id="myMap" style='position:relative;width:100%;height:600px;'></div>
     </div>
+    --}}
+    <div class="container-fluid flex justify-between mx-auto mt-20">
+        <img src="{{url('images/bds-map.jpg')}}" alt="BDS" class="img img-responsive w-60" style="width: 600px; margin-left: 0px; margin-right: 0px;">
+    </div>
+
 </div>
 @push('scripts')
 <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AriRJgQwqfFtUVyixXJKcIzcNaA7au3N6-BmzoedkmMJjoFf09TkfNUdoNaDccRG' async defer></script>

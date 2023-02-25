@@ -5,8 +5,8 @@
 @section('content')
 <div class="main-content">
     <!-- Section: inner-header -->
-    <section class="inner-header divider parallax layer-overlay overlay-dark-5" data-stellar-background-ratio="0.5"
-        data-bg-img="http://placehold.it/1920x1280">
+    <section class="inner-header divider parallax layer-overlay overlay-dark-5" data-stellar-background-ratio="0.2"
+        data-bg-img="{{URL::asset('storage/photos/banner/contacts.jpg')}}">
         <div class="container pt-90 pb-30">
             <!-- Section Content -->
             <div class="section-content pt-100">
@@ -27,7 +27,7 @@
 </div>
 <div class="container" style="margin-top: 30px;">
     <livewire:client.contact.contact-us />
-
+    <livewire:client.contact.branch-contacts />
 </div>
 <br>
 <!-- Footer -->

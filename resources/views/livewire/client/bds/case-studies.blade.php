@@ -20,7 +20,7 @@
 
                                     <div class="media-body">
                                         <div class="event-content pull-left flip">
-                                            <h4 class="entry-title text-white m-0 mt-5"><a href="#">
+                                            <h4 class="entry-title text-white m-0 mt-5"><a href="{{url('bds-case-single?title='.$n->title.'&id='.$n->id)}}">
 
                                                 @switch(session('locale'))
                                                     @case('ta')
@@ -62,7 +62,7 @@
                                     @endswitch
 
                                 </p>
-                                <a href="" wire:click.prevent="OpenReadView('{{$n->id}}')" class="btn-read-more">Read more</a>
+                                <a href="{{url('bds-case-single?title='.$n->title.'&id='.$n->id)}}" class="btn-read-more">Read more</a>
                                 <div class="clearfix"></div>
                             </div>
                         </article>

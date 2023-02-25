@@ -16,13 +16,16 @@ data-wow-delay="0.3s">
         <div class="container-fluid pt-0 pb-0">
             <div class="row">
 
-                <!-- Google Map HTML Codes -->
-                <div id="map-canvas-multipointer" data-mapstyle="default" data-height="600" data-zoom="8"
-                    data-marker="images/map-marker.png">
+                <div class="col-md-3">
+
                 </div>
-                <!-- Google Map Javascript Codes -->
-                <script src="https://maps.google.com/maps/api/js?key=AIzaSyAYWE4mHmR9GyPsHSOVZrSCOOljk8DU9B4"></script>
-                <script src="{{asset('js/google-map-init-multilocation.js')}}"></script>
+                <div class="col-md-8">
+                    <img src="{{url('images/map-2023.jpg')}}" alt="BDS" class="img img-responsive w-60" style="width: 600px; margin-left: 0px; margin-right: 0px;">
+                </div>
+
+                <div class="col-md-3">
+
+                </div>
 
             </div>
         </div>

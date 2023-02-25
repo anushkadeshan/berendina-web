@@ -2,7 +2,7 @@
 @section('title', 'BDS Annual Reports')
 
 @section('css')
-<link rel="stylesheet" type="text/css" href="{{asset('assets/css/vendors/datatables.css')}}">
+
 @endsection
 
 @section('style')

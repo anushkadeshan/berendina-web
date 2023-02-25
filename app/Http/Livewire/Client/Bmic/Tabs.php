@@ -7,47 +7,54 @@ use Livewire\Component;
 class Tabs extends Component
 {
     public $milestone = false;
+
     public $vision = false;
+
     public $values = false;
+
     public $shareholders = false;
+
     public $board = false;
+
     public $services = false;
 
-    public function mount(){
+    public function mount()
+    {
         $this->milestone = true;
     }
 
-    public function milestone(){
+    public function milestone()
+    {
         $this->vision = false;
         $this->values = false;
         $this->milestone = true;
         $this->shareholders = false;
         $this->services = false;
         $this->board = false;
-
     }
 
-    public function vision(){
+    public function vision()
+    {
         $this->vision = true;
         $this->milestone = false;
         $this->values = false;
         $this->shareholders = false;
         $this->services = false;
         $this->board = false;
-
     }
 
-    public function values(){
+    public function values()
+    {
         $this->vision = false;
         $this->milestone = false;
         $this->values = true;
         $this->board = false;
         $this->services = false;
         $this->shareholders = false;
-
     }
 
-    public function shareholders(){
+    public function shareholders()
+    {
         $this->vision = false;
         $this->milestone = false;
         $this->values = false;
@@ -56,24 +63,24 @@ class Tabs extends Component
         $this->board = false;
     }
 
-    public function board(){
+    public function board()
+    {
         $this->vision = false;
         $this->milestone = false;
         $this->values = false;
         $this->shareholders = false;
         $this->services = false;
         $this->board = true;
-
     }
 
-    public function services(){
+    public function services()
+    {
         $this->vision = false;
         $this->milestone = false;
         $this->values = false;
         $this->shareholders = false;
         $this->board = false;
         $this->services = true;
-
     }
 
     public function render()

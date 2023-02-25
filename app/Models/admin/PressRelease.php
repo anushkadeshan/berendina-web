@@ -10,6 +10,6 @@ class PressRelease extends Model
     use HasFactory;
 
     public $fillable = [
-        'title', 'sn_title', 'ta_title', 'thumb', 'photo', 'published_date', 'company', 'added_by', 'isPublished'
+        'title', 'sn_title', 'ta_title', 'thumb', 'photo', 'published_date', 'company', 'added_by', 'isPublished',
     ];
 }

@@ -6,12 +6,12 @@
     <!-- Meta Tags -->
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta name="description" content="CharityPress - Nonprofit, Crowdfunding & Charity HTML5 Template" />
-    <meta name="keywords" content="building,business,construction,cleaning,transport,workshop" />
+    <meta name="description" content="CREATE AN EMPOWERED, EQUITABLE SOCIETY WHERE POVERTY DOES NOT EXIST" />
+    <meta name="keywords" content="non-profit,microfinance,micro finance,banking,charity,economic disaster" />
     <meta name="author" content="Berendina Development Services" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Page Title -->
-    <title>Berendina</title>
+    <title>@yield('title')</title>
     <!-- Favicon and Touch Icons -->
     <link rel="apple-touch-icon" sizes="57x57" href="{{asset('images/apple-icon-57x57.png')}}">
     <link rel="apple-touch-icon" sizes="60x60" href="{{asset('images/apple-icon-60x60.png')}}">
@@ -89,6 +89,7 @@
     <style>
         body {
             font-family: 'Nunito', sans-serif;
+            overflow-x: hidden;
         }
         .owl-carousel {
             -ms-touch-action: none;
