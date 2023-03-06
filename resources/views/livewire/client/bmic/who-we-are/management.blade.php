@@ -6,15 +6,15 @@
           margin-left: -40px;
           margin-right: -40px;
        }
- 
+
        .our-team .team-wrap {
           padding: 0 40px;
        }
- 
+
        .our-team .container-fluid {
           padding: 0 50px;
        }
- 
+
        .team-img img {
           -webkit-transition: all .2s ease-in-out;
           -moz-transition: all .2s ease-in-out;
@@ -23,17 +23,17 @@
           overflow: hidden;
           width: 100%;
        }
- 
+
        .team-member,
        .team-img {
           position: relative;
           overflow: hidden;
        }
- 
+
        .team-title {
           margin: 30px 0 7px;
        }
- 
+
        .overlay {
           background-color: rgba(20, 20, 20, .7);
           position: absolute;
@@ -46,7 +46,7 @@
           -o-transition: all .2s ease-in-out;
           transition: all .2s ease-in-out;
        }
- 
+
        .team-details {
           opacity: 0;
           position: absolute;
@@ -61,27 +61,27 @@
           -o-transition: all .2s ease-in-out;
           transition: all .2s ease-in-out;
        }
- 
+
        .team-details p {
           color: #fff;
        }
- 
+
        .team-img:hover .team-details {
           opacity: 1;
           margin-top: -80px;
        }
- 
+
        .team-img:hover .overlay {
           opacity: 1;
        }
- 
+
        .socials a {
           display: inline-block;
           width: 37px;
           height: 37px;
           background-color: transparent;
        }
- 
+
        .socials i {
           line-height: 37px;
           color: #616161;
@@ -96,18 +96,21 @@
           -ms-transition: all 0.2s linear;
           transition: all 0.2s linear;
        }
- 
+
        .team-details .socials i {
           color: #fff;
        }
- 
+
        .socials a:hover i {
           color: #fff;
           background-color: #355c7d;
        }
     </style>
     <div class="row team-row">
-       @foreach($profiles as $profile)
+       @foreach($profiles as $key => $profile)
+       @php
+        $moduler = $key % 4;
+       @endphp
        <div class="col-md-3 col-sm-6 team-wrap">
           <div class="team-member text-center">
              <div class="team-img">
@@ -125,8 +128,11 @@
              <span>{{$profile->designation}}</span>
           </div>
        </div>
+       @if ($moduler == 3)
+       <div class="clearfix"></div>
+       @endif
        @endforeach
        <!-- end team member -->
- 
+
     </div>
  </div>

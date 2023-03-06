@@ -1,6 +1,6 @@
 @extends('layouts.client.app')
 
-@section('title', 'Berendina - Press')
+@section('title', 'Berendina - COVID-19')
 
 @section('content')
 <div class="main-content">

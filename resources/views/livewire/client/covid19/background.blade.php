@@ -1,16 +1,33 @@
 <div>
     <p class="text-justify">
-        Considering the situation prevailed in the country, Berendina Stichting extended the support for COVID-19 relief
-        actions of Berendina Development Services during the year 2021 as well. In response, BDS gathered data and
-        information from relevant health authorities, government officials in BDS and BMIC working areas to analyze the
-        need of the community, clients and health sector. Moreover, BDS also looked into the effect of COVID-19 on
-        Berendina staff. Based on the findings, relief activities were planned and circulars were issued to
-        operationalize the implementation plan. In response to the requests made by the regional health authorities,
-        intermediate care centers were assisted with necessary medical equipment and items. Elders’ homes, children’s
-        homes and disability care homes were provided with dry rations. Personal protective wears and equipment were
-        provided for the health officials and government front line workers. BMIC clients and BDS existing and potential
-        beneficiaries were also given COVID-19 relief support. Awareness on SGBV and COVID-19 prevention was carried out
-        through public announcements. This report summarizes the progress of all COVID-19 relief activities carried out
-        by BDS as of 31st December 2021.
+        As an organization, in 2020 we leveraged our resources towards
+        distributing the necessary financial aid and emergency support to hard
+        hit areas of the society whose lives and livelihoods have been
+        threatened by the pandemic, including supporting the authorities and
+        health sector by distributing essential medical equipment and other
+        items required. <br />
+        <br />
+
+        In 2021, our focus was directed towards the equipping Intermediate Care
+        Centers with required necessary medical equipment such as oxygen therapy
+        equipment which includes oxygen concentrators, oxygen cylinders and
+        connectors, Pulse Oximeters, Multipara monitors, PPE etc. and other
+        items required for the critical functioning of the Intermediate Care
+        Centers. <br />
+        <br />
+
+        Packs of dry rations and other items were distributed to the care homes
+        and quarantined families. Dry rations contained essential staples such
+        as rice, milk powder and sugar, etc, including sanitary products,
+        medicine and supplementary products such as Panadol, Isocal and
+        Diabetasol. The objective of the relief assistance was to maintain
+        acceptable levels of nutrition and hygiene conditions of most vulnerable
+        families.<br />
+        <br />
+
+        As part of our Bright Student Scholarship program, we granted students
+        with an additional allowance to purchase data packages in order to
+        ensure continuation of their education through online platforms during
+        the time of school closure due to the pandemic.
     </p>
 </div>

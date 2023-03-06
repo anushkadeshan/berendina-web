@@ -1,26 +1,13 @@
 <div class="mt-20 ml-10 mr-10">
     <div class="row">
-        <div class="col-md-4">
-            <div style="height: 32rem;">
-                <livewire:livewire-pie-chart key="{{ $pieChartModel->reactiveKey() }}"
-                    :pie-chart-model="$pieChartModel" />
-            </div>
+        <div class="col-md-2">
         </div>
-        <div class="col-md-4">
-            <div style="height: 32rem;">
-                <livewire:livewire-pie-chart key="{{ $pieChartModel2019->reactiveKey() }}"
-                    :pie-chart-model="$pieChartModel2019" />
-            </div>
+        <div class="col-md-8">
+            <img src="{{url('images/bds-fh.jpg')}}" alt="BDS" class="img img-responsive w-60" style="width: 600px; margin-left: 0px; margin-right: 0px;">
         </div>
-        <div class="col-md-4">
-            <div style="height: 32rem;">
-                <livewire:livewire-pie-chart key="{{ $pieChartModel2018->reactiveKey() }}"
-                    :pie-chart-model="$pieChartModel2018" />
-            </div>
+        <div class="col-md-2">
         </div>
     </div>
-
-    Need Expediture Analysis
 </div>
 
 @push('scripts')

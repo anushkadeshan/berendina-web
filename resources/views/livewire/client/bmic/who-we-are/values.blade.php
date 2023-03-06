@@ -3,7 +3,7 @@
         <div class="col-md-4 wow fadeInLeft">
             <h4 class="text-theme-colored">Culture</h4>
             <div class="separator dotted m-0"></div>
-            <ul class="list-icon theme-colored" style="font-size: 4px;">
+            <ul class="list-icon theme-colored" style="font-size: 13px;">
                 <li style="font-size: 13px;"><i class="fa fa-arrow-right"></i>Stakeholder engagement</li>
                 <li style="font-size: 13px;"><i class="fa fa-arrow-right"></i>Respect gender equality </li>
                 <li style="font-size: 13px;"><i class="fa fa-arrow-right"></i>Participatory decision making</li>

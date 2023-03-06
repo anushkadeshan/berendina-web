@@ -5,9 +5,22 @@
             color: white !important;
             font-weight: bold;
           }
+        .gptw {
+            z-index: 100000;
+            position: fixed;
+            width: 70px;
+            height: 100px;
+            right: 30px;
+            background-image: url('{{ asset("images/gptw.png")}}');
+            background-size: cover;
+
+        }
     </style>
     <!-- Header -->
+
     <header id="header" class="header">
+        <div class="gptw">
+        </div>
         <div class="header-top sm-text-center p-10" style="background-color:#004C97;">
             <div class="container">
                 <div class="row">

@@ -37,7 +37,10 @@
             <h3 class="line-bottom mt-0 mb-30 text-center">BDS Branches</h3>
             <div>
 
-                @foreach($bdsBranches as $bds)
+                @foreach($bdsBranches as $key => $bds)
+                @php
+                $moduler = $key % 2;
+                @endphp
                 <div class="col-md-6 mb-20">
                     <h4 class="font-bold text-primary">{{$bds->branch_name}}</h4>
                     <p>
@@ -47,7 +50,11 @@
                     <p><i class="fa fa-map text-primary" ></i><a href="https://www.google.com/maps/search/?api=1&query={{$bds->lat}}%2C{{$bds->lng}}"> Google Map Direction</a></p>
 
                 </div>
+                @if ($moduler == 1)
+                <div class="clearfix"></div>
+                @endif
                 @endforeach
+
             </div>
         </div>
     </div>

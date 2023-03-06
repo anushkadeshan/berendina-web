@@ -107,7 +107,10 @@
       }
    </style>
    <div class="row team-row">
-      @foreach($profiles as $profile)
+      @foreach($profiles as $key => $profile)
+      @php
+      $moduler = $key % 4;
+      @endphp
       <div class="col-md-3 col-sm-6 team-wrap">
          <div class="team-member text-center">
             <div class="team-img">
@@ -125,6 +128,10 @@
             <span>{{$profile->designation}}</span>
          </div>
       </div>
+
+      @if ($moduler == 3)
+      <div class="clearfix"></div>
+      @endif
       @endforeach
       <!-- end team member -->
 
